@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.container {
+    display: flex;
+    max-width: 64rem;
+    padding: 0 1rem;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 0.1;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    /* Default to column for desktop */
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust this breakpoint as needed */
+    .container {
+        flex-direction: column;
+        /* Stack columns vertically on smaller screens */
+    }
+
+    .sidebar {
+        flex: 1;
+        /* Allow columns to take full width */
+        flex-direction: row;
+    }
+}
