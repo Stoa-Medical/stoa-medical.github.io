@@ -60,8 +60,8 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # Update this path to match your actual build output directory
-          path: 'app/.svelte-kit/build/'
+          # Point to the client output directory specifically
+          path: 'app/build'
 
   deploy:
     # Only try this on the `main` branch

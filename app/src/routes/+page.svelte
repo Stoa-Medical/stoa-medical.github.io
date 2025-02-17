@@ -1,6 +1,6 @@
 <!-- src/routes/+page.svelte -->
 <main>
-    <b>Stoa Medical is on a mission to fix how healthcare works</b>
-    <br/><br/>
-    We're bootstraping -- check-back for updates!
+    <h1>Stoa Medical is an healthcare-focused, open-core software agency</h1>
+    <br>
+    <p>We're <a href="https://en.wikipedia.org/wiki/Bootstrapping#Business">bootstraping</a> — check-back for updates!</p>
 </main>

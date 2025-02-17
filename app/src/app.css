@@ -2,6 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+    font-family: "Cormorant Garamond", sans-serif !important;
+}
+
+a {
+    text-decoration: underline;
+    target-new: tab;
+}
+
 .container {
     display: flex;
     max-width: 64rem;
