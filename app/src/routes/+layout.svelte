@@ -1,7 +1,7 @@
 <!-- src/routes/+layout.svelte -->
 <script>
     import '../app.css';
-    let img_text = "Stoa Medical's logo -- the greek letter sigma (Σ) and the Rod of Asclepius.";
+    let img_text = "Stoa Medical's logo — the greek letter sigma (Σ) and the Rod of Asclepius.";
 </script>
 
 <div class="container">
@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a class="border-b-2" href="/about">about</a></li>
-                <li><a class="border-b-2"href="/projects">projects</a></li>
+                <li><a class="border-b-2" href="/projects">projects</a></li>
             </ul>
         </nav>
     </aside>
