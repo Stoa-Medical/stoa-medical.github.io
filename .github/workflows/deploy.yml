@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
+  # Using a different branch name? Replace `main` with your branch's name
   push:
     branches:
       - main
@@ -42,7 +42,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
           cache-dependency-path: app/pnpm-lock.yaml
 
@@ -60,8 +60,8 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # end dir should match the `pages` option in your adapter-static options
-          path: 'app/build/'
+          # Update this path to match your actual build output directory
+          path: 'app/.svelte-kit/build/'
 
   deploy:
     # Only try this on the `main` branch
