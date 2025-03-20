@@ -1,7 +1,7 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-    import '../app.css';
-    import Navbar  from '../components/Navbar.svelte'
+    import '$lib/styles/app.css';
+    import Navbar  from '$lib/components/Navbar.svelte'
 </script>
 
 <div class="container">
