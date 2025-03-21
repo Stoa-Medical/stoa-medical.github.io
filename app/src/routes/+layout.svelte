@@ -1,13 +1,14 @@
 <!-- src/routes/+layout.svelte -->
 <script>
     import '$lib/styles/app.css';
-    import Navbar  from '$lib/components/Navbar.svelte'
+    import Navbar from '$lib/components/Navbar.svelte';
+    import { Button } from 'flowbite-svelte';
 </script>
 
-<div class="container">
-    <aside class="sidebar m-4">
+<div class="flex flex-col w-full">
+    <header class="bg-zinc-900 text-white p-4">
         <Navbar />
-    </aside>
+    </header>
     <main>
         <div class="h-8"></div>
         <slot />
