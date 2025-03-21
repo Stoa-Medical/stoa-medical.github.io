@@ -1,8 +1,12 @@
 <script>
     import Lightbulb from "$lib/icons/Lightbulb.svelte";
-    export let imgText = "Stoa Medical's logo — the greek letter sigma (Σ) and the Rod of Asclepius.";
+    import { onMount } from 'svelte';
 
-    let isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    let isDark = false;
+
+    onMount(() => {
+        update_theme();
+    });
 
     const update_theme = () => {
         const html = document.documentElement;
@@ -14,21 +18,21 @@
     }
 </script>
 
-<div class="flex items-center justify-between w-full">
+<div class="navbar serif-font">
     <a href="/">
-        <img class="bg-zinc-50 rounded-md fill-transparent" src="/Logomark.svg" alt={imgText} width="32rem" height="32rem"/>
+        <img class="rounded-md" src={isDark ? "/Logomark-light.svg" : "/Logomark.svg"} alt={"Stoa Medical's logomark: the sigma (summation) integrated with a snake"} width="32rem" height="32rem"/>
     </a>
     <nav>
         <ul class="flex items-center gap-6">
-            <li><a href="/products">Products</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/about">About us</a></li>
+            <li><a href="/products" class="theme-toggle">Products</a></li>
+            <li><a href="/services" class="theme-toggle">Services</a></li>
+            <li><a href="/about" class="theme-toggle">About us</a></li>
             <li>
-                <a href="https://calendly.com/eric-pan-stoamedical/30min" class="bg-teal-400 text-white px-4 py-2 rounded-md" target="_blank">Book a call</a>
+                <a href="https://calendly.com/eric-pan-stoamedical/30min" class="theme-toggle" target="_blank">Book a call</a>
             </li>
             <li>
                 <button 
-                    class="bg-transparent border-none cursor-pointer p-2 rounded-md hover:bg-zinc-800"
+                    class="theme-toggle"
                     on:click={update_theme}
                 >
                 <Lightbulb dark={isDark}/>
@@ -37,3 +41,35 @@
         </ul>
     </nav>
 </div>
+
+<style>
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    
+    :global([data-theme="light"]) .navbar {
+        background-color: var(--papyrus-light);
+        color: var(--ink);
+    }
+    
+    .theme-toggle {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.375rem;
+    }
+    
+    :global([data-theme="dark"]) .theme-toggle:hover {
+        background-color: var(--ink-mid);
+    }
+    
+    :global([data-theme="light"]) .theme-toggle:hover {
+        background-color: var(--papyrus-mid);
+    }
+</style>
