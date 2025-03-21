@@ -1,3 +1,6 @@
+<script>
+    export const prerender = true;
+</script>
 <main>
     <h1>Our projects focus on integrating biomedicine and wellness.</h1>
     <br>

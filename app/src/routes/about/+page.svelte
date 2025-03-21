@@ -1,3 +1,7 @@
+<script>
+    export const prerender = true;
+</script>
+
 <main>
     <h1>Stoa Medical is on a mission to fix how healthcare works.</h1>
     <br>

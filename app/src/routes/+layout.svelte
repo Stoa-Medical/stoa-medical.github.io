@@ -2,6 +2,8 @@
 <script>
     import '$lib/styles/app.css';
     import Navbar from '$lib/components/Navbar.svelte';
+
+    export const prerender = true;
 </script>
 
 <div class="flex flex-col w-full">
