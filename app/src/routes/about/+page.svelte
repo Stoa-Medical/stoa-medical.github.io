@@ -8,7 +8,7 @@
         We believe that by combining data, design, and engineering excellence, we can create a new model of care that is more personalized, proactive, and user-centric. 
         <br>
         <br>
-        If you are interested in any of our <a href="/projects">projects</a>, please reach out! Contact: eric.pan(at)stoamedical.com
+        If you are interested in any of our <a href="/products">projects</a>, please reach out! Contact: eric.pan(at)stoamedical.com
         <br>
         If you're interested in Stoic philosophy, you can find more about that <a href="https://en.wikipedia.org/wiki/Stoicism">here</a>.
     </p>
