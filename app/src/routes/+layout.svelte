@@ -10,7 +10,7 @@
     <header class="p-4">
         <Navbar />
     </header>
-    <main class="p-4">
+    <div class="p-4">
         <slot />
-    </main>
+    </div>
 </div>
