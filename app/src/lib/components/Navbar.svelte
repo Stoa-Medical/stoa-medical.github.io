@@ -51,12 +51,12 @@
         padding: 1rem;
     }
     
-    
+    /*    TODO: find way to toggle entire background with papyrus-light (not just navbar)
     :global([data-theme="light"]) .navbar {
         background-color: var(--papyrus-light);
         color: var(--ink);
     }
-    
+     */
     .theme-toggle {
         background-color: transparent;
         border: none;
@@ -66,7 +66,7 @@
     }
     
     :global([data-theme="dark"]) .theme-toggle:hover {
-        background-color: var(--ink-mid);
+        background-color: var(--sea-mid);
     }
     
     :global([data-theme="light"]) .theme-toggle:hover {
