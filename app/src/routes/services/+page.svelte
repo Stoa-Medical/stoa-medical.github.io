@@ -1,7 +1,3 @@
-<script>
-    export const prerender = true;
-</script>
-
 <main>
     <h1>Hire intelligent agents (people) that leverage AI agents (code)</h1>
     <br/>

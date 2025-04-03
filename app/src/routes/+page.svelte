@@ -1,7 +1,3 @@
-<script>
-    export const prerender = true;
-</script>
-
 <main>
     <h1>Stoa Medical is an open-core software agency integrating biomedicine and wellness</h1>
     <br>
