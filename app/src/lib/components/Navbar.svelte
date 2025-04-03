@@ -1,29 +1,41 @@
 <script>
     import Lightbulb from "$lib/icons/Lightbulb.svelte";
     import GitHub from "$lib/icons/GitHub.svelte";
-    import { onMount } from 'svelte';
+    import { onMount, onDestroy } from 'svelte';
+    import { browser } from '$app/environment';
 
     let isDark = false;
     let isMobile = false;
 
     onMount(() => {
-        update_theme();
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
+        if (browser) {
+            updateTheme();
+            checkMobile();
+            window.addEventListener('resize', checkMobile);
+        }
+    });
+
+    onDestroy(() => {
+        if (browser) {
+            window.removeEventListener('resize', checkMobile);
+        }
     });
 
     const checkMobile = () => {
-        isMobile = window.innerWidth < 768;
+        if (browser) {
+            isMobile = window.innerWidth < 768;
+        }
     };
 
-    const update_theme = () => {
-        const html = document.documentElement;
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        isDark = newTheme === 'dark';
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+    const updateTheme = () => {
+        if (browser) {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            isDark = newTheme === 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
     }
 </script>
 
@@ -41,7 +53,7 @@
                 <li>
                     <button 
                         class="theme-toggle"
-                        on:click={update_theme}
+                        on:click={updateTheme}
                     >
                     <Lightbulb dark={isDark}/>
                     </button>
@@ -93,7 +105,7 @@
             <li>
                 <button 
                     class="mobile-nav-item"
-                    on:click={update_theme}
+                    on:click={updateTheme}
                 >
                     <Lightbulb dark={isDark}/>
                     <span>Theme</span>
@@ -143,6 +155,8 @@
         padding: 0.5rem 0;
         border-top: 1px solid var(--papyrus-mid);
         z-index: 50;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     :global([data-theme="dark"]) .mobile-nav {
