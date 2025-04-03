@@ -25,9 +25,9 @@
     </a>
     <nav>
         <ul class="flex items-center gap-6">
-            <li><a href="/products" class="theme-toggle">Products</a></li>
-            <li><a href="/services" class="theme-toggle">Services</a></li>
-            <li><a href="/about" class="theme-toggle">About us</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About us</a></li>
             <li><a href="https://github.com/Stoa-Medical" class="theme-toggle"><GitHub dark={isDark}/></a></li>
             <li>
                 <button 
