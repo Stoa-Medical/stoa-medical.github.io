@@ -1,31 +1,117 @@
+/* Tailwind CSS imports */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Optional: Pico CSS import */
+
+/* Base variables like fonts and the raw color palette */
 :root {
+    /* Fonts */
     --font-primary: "Helvetica", sans-serif;
     --font-secondary: "Cormorant Garamond", serif;
 
-    /* Main colors */
-    --ink: #262431;
-    --papyrus: #ECD8A8;
-    --sky: #B0C3E8;
-    --sea: #A7E7DF;
-    --error: #E58382;
-    --success: #76D5AC;
-    --warning: #EEBD8E;
+    /* Raw Color Palette */
     --white: #FDFCFB;
-
-    /* Color levels (mid) */
+    --ink: #262431;
     --ink-mid: #B2B1B9;
+    --ink-light: #F3F2F4;
+    --papyrus: #ECD8A8;
     --papyrus-mid: #F4E9CE;
+    --papyrus-light: #F8F2E3;
+    --sky: #B0C3E8;
     --sky-mid: #DDE6F8;
+    --sea: #A7E7DF;
     --sea-mid: #C9F4EF;
+    --error: #E58382;
     --error-mid: #F1B2B0;
+    --success: #76D5AC;
     --success-mid: #A2EACB;
+    --warning: #EEBD8E;
     --warning-mid: #F8DABE;
 
-    /* Color levels (light) */
-    --ink-light: #F3F2F4;
-    --papyrus-light: #F8F2E3;
+    /* Define the specific color/style values for light and dark themes. */
+    --bg-primary-light: var(--white);
+    --bg-secondary-light: var(--papyrus-light);
+    --text-primary-light: var(--ink);
+    --text-secondary-light: #545260;
+    --accent-light: var(--papyrus);
+    --logo-filter-light: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+    /* --border-color-light: var(--ink-mid); */
+    /* --link-color-light: var(--accent-light); */
+
+    /* Dark Theme Specific Values */
+    --bg-primary-dark: var(--ink);
+    --bg-secondary-dark: #322F3D;
+    --text-primary-dark: var(--ink-light);
+    --text-secondary-dark: #DDDCDE;
+    --accent-dark: var(--sea-mid);
+    --logo-filter-dark: grayscale(80%) brightness(150%);
+    /* --border-color-dark: var(--ink-mid); */
+    /* --link-color-dark: var(--accent-dark); */
+
+
+    /* Theme Application Logic (Generic Variables) */
+    /* Define the generic variables used throughout the site (e.g., var(--bg-primary)). */
+    /* They default to light theme values and are overridden for dark theme below. */
+    /* Use THESE variables when styling components. */
+
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --accent: var(--accent-light);
+    --logo-filter: var(--logo-filter-light);
+    /* --border-color: var(--border-color-light); */
+    /* --link-color: var(--link-color-light); */
+    /* --button-bg: var(--accent-light); */
+    /* --button-text: var(--text-primary-light); */
+
+} /* End of :root */
+
+/* Apply DARK theme overrides */
+/* Ensure your JS toggles the '.dark' class on <html> or use '[data-theme="dark"]' */
+:root.dark {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --accent: var(--accent-dark);
+    --logo-filter: var(--logo-filter-dark);
+    /* --border-color: var(--border-color-dark); */
+    /* --link-color: var(--link-color-dark); */
+    /* --button-bg: var(--accent-dark); */
+    /* --button-text: var(--text-primary-dark); */
+}
+
+
+/* Custom Base Styles */
+/* Apply base styles using the GENERIC theme variables */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+/* Styling for inline SVGs using theme variables */
+.themed-logo svg path,
+.themed-logo svg circle,
+.themed-logo svg rect {
+    fill: var(--text-primary);
+    transition: fill 0.3s ease;
+}
+.themed-logo svg {
+    filter: var(--logo-filter);
+    transition: filter 0.3s ease;
 }
