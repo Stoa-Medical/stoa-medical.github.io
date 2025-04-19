@@ -4,6 +4,8 @@
 # Personal
 _tmp/
 .specstory/
+.windsurfrules
+.cursor/
 
 # Logs
 logs
