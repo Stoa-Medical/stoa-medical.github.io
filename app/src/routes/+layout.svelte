@@ -1,6 +1,5 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-    import '$lib/styles/app.css';
     import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
@@ -8,6 +7,7 @@
     <header class="p-4">
         <Navbar />
     </header>
+    <!-- TODO: Replace the slot with a snippet (Svelte 5) -->
     <div class="p-4">
         <slot />
     </div>

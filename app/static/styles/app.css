@@ -94,13 +94,25 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
-  color: var(--text-primary);
+h1 {
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    color: var(--text-secondary);
+    font-size: 1.6rem;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--text-secondary);
 }
 
 a {
-  color: var(--accent);
+  color: var(--ink);
   transition: color 0.3s ease;
 }
 
