@@ -1,6 +1,6 @@
 <script>
-    import Lightbulb from "$lib/icons/Lightbulb.svelte";
-    import GitHub from "$lib/icons/GitHub.svelte";
+    import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
+    import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
     import { browser } from '$app/environment';
 
     // Session-only theme state (default: light)
@@ -28,13 +28,13 @@
                 <li><a href="/products">Products</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="https://github.com/Stoa-Medical" class="theme-toggle"><GitHub/></a></li>
+                <li><a href="https://github.com/Stoa-Medical" class="theme-toggle"><GitHubIcon/></a></li>
                 <li>
                     <button 
                         class="theme-toggle"
                         onclick={updateTheme}
                     >
-                    <Lightbulb />
+                    <LightbulbIcon />
                     </button>
                 </li>
             </ul>
