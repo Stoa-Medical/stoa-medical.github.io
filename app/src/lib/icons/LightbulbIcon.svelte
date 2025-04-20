@@ -1,41 +1,13 @@
 <script>
-  import { browser } from "$app/environment";
-
-  let theme = $state(getInitialTheme());
-  let isDark = $derived(theme === "dark");
-
-  // Get initial theme (only used during initialization)
-  function getInitialTheme() {
-    if (!browser) return "light";
-    
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) return storedTheme;
-    
-    return window.matchMedia("(prefers-color-scheme: dark)").matches 
-      ? "dark" 
-      : "light";
-  }
-
-  // Update theme and save preference
-  function toggleTheme() {
-    theme = theme === "dark" ? "light" : "dark";
-    if (browser) {
-      localStorage.setItem("theme", theme);
-      document.documentElement.setAttribute("data-theme", theme);
-    }
-  }
-
-  // Apply theme when component mounts
-  $effect(() => {
-    if (browser) {
-      document.documentElement.setAttribute("data-theme", theme);
-    }
-  });
+  import { theme, toggleTheme } from '$lib/stores/theme';
+  
+  // Subscribe to the theme store (automatically handled by Svelte)
+  let isDark = $derived($theme === 'dark');
 </script>
 
 <button
   class="theme-toggle"
-  on:click={toggleTheme}
+  onclick={toggleTheme}
   aria-label="Toggle theme"
 >
   {#if isDark}

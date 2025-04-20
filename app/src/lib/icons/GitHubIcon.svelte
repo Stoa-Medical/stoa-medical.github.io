@@ -1,10 +1,13 @@
 <script>
-  let { dark = false } = $props();
+  import { theme } from '$lib/stores/theme';
+  
+  // Subscribe to the theme store (automatically handled by Svelte)
+  let isDark = $derived($theme === 'dark');
 </script>
 
-{#if dark}
+{#if isDark}
   <svg
-    class="w-6 h-6 text-white-800 dark:text-white"
+    class="github-icon"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -20,7 +23,7 @@
   </svg>
 {:else}
   <svg
-    class="w-6 h-6 text-gray-800 dark:text-black"
+    class="github-icon"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -35,3 +38,11 @@
     />
   </svg>
 {/if}
+
+<style>
+  .github-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--text-primary);
+  }
+</style>

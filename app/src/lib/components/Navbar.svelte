@@ -1,25 +1,10 @@
 <script>
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
   import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
-  import { browser } from "$app/environment";
-
-  // Theme state will now be managed by the LightbulbIcon component
-  let theme = $state("light");
-  let isDark = $derived(theme === "dark");
-
-  // Initialize theme from system preference or stored preference
-  $effect(() => {
-    if (browser) {
-      // This initial check helps match the icon with the theme applied by LightbulbIcon
-      const storedTheme = localStorage.getItem("theme");
-      
-      if (storedTheme) {
-        theme = storedTheme;
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        theme = "dark";
-      }
-    }
-  });
+  import { theme } from '$lib/stores/theme';
+  
+  // Subscribe to the theme store for the logo
+  let isDark = $derived($theme === 'dark');
 </script>
 
 <header class="navbar serif-font">
@@ -41,7 +26,7 @@
         <a
           href="https://github.com/Stoa-Medical"
           class="theme-toggle"
-          aria-label="GitHub"><GitHubIcon dark={isDark} /></a
+          aria-label="GitHub"><GitHubIcon /></a
         >
       </li>
       <li>
