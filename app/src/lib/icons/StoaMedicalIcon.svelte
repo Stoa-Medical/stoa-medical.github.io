@@ -26,6 +26,8 @@
       currentColor = '#262431'; // Ink color for light backgrounds
     } else if (variant === 'tan') {
       currentColor = '#F8F2E3'; // Tan color for alternative styling
+    } else if (variant === 'grey') { 
+      currentColor = '#322F3D';
     } else {
       currentColor = getColorForTheme();
     }
