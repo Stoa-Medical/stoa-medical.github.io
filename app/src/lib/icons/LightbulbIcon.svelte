@@ -18,16 +18,7 @@
   .lightbulb {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--color);
-  }
-  
-  /* Use Pico CSS variables for theming */
-  :global([data-theme="light"]) .lightbulb {
-    --color: var(--primary);
-  }
-  
-  :global([data-theme="dark"]) .lightbulb {
-    --color: var(--primary-inverse);
+    color: var(--text-primary);
   }
 </style>
   
