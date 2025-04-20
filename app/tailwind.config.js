@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Cormorant Garamond', 'serif'], // Override the default sans font
+        sans: ["Cormorant Garamond", "serif"], // Override the default sans font
       },
     },
   },
-  plugins: []
+  plugins: [],
 };

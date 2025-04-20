@@ -1,15 +1,13 @@
-<main>
-    <h1>Stoa Medical is on a mission to fix how healthcare works.</h1>
-    <br>
+<section>
+    <h1>About</h1>
+    <h2>Stoa Medical is on a mission to fix how healthcare works.</h2>
     <p>
-        Our goal is to build technology that empowers patients, providers, and people within organizations to make better decisions and improve outcomes. 
-        <br>
-        <br>
-        We believe that by combining data, design, and engineering excellence, we can create a new model of care that is more personalized, proactive, and user-centric. 
-        <br>
-        <br>
-        If you are interested in any of our <a href="/products">projects</a>, please reach out! Contact: eric.pan(at)stoamedical.com
-        <br>
-        If you're interested in Stoic philosophy, you can find more about that <a href="https://en.wikipedia.org/wiki/Stoicism">here</a>.
+        Our goal is to build technology that empowers patients, providers, and people within organizations to make better decisions and improve outcomes.
     </p>
-</main>
+    <p>
+        We believe that by combining data, design, and engineering excellence, we can create a new model of care that is more <strong>personalized, proactive, and user-centric</strong>.
+    </p>
+    <p>
+        Right now, we're <a href="https://en.wikipedia.org/wiki/Bootstrapping#Business">bootstrapping</a> and <a href="https://www.linkedin.com/in/ericpan64/">a team of one</a>, please reach-out if you'd like to connect!
+    </p>
+</section>
