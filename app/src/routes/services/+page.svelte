@@ -1,7 +1,6 @@
-<main>
+<section>
   <h1>Services</h1>
   <h2>We deliver high-quality software with value-based pricing.</h2>
-  <br />
   Stoa Medical offers three tiers to meet your needs:
   <ol>
     <li>Custom design + development for you ✨ and your team ✨</li>
@@ -12,7 +11,7 @@
   in the price). Unlike traditional devshops that charge per-hour, we believe this
   gets both the best result and the most productive environment for ourselves and
   your team.
-</main>
+</section>
 
 <style>
   ol {

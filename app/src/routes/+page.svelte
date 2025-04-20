@@ -3,7 +3,7 @@
     import { theme } from "$lib/stores/theme";
 </script>
 
-<main class="columns">
+<section class="columns">
   <section class="left-col">
     <h1>Stoa Medical</h1>
     <br />
@@ -20,7 +20,7 @@
   <aside class="right-col">
     <StoaMedicalIcon variant={$theme === 'dark' ? 'grey' : 'tan'}></StoaMedicalIcon>
   </aside>
-</main>
+</section>
 
 <style>
   .columns {
@@ -30,18 +30,11 @@
   }
   .left-col {
     flex: 0 1 65%;
-    padding: 1rem;
   }
   .right-col {
     flex: 0 1 35%;
     display: flex;
     align-items: flex-start;
-    padding: 1rem;
-  }
-  .right-col img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
   @media (max-width: 700px) {
     .columns {
@@ -51,7 +44,6 @@
     .left-col,
     .right-col {
       flex: 1 1 100%;
-      padding: 1rem;
     }
     .right-col {
       justify-content: flex-start;

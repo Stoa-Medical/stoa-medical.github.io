@@ -30,7 +30,8 @@
   /* Style the main content area */
   main {
     flex: 1; /* This makes the main content expand to fill available space */
-    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
     width: 100%;
   }
 </style>
