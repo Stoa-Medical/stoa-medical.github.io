@@ -1,11 +1,12 @@
 <main>
   <h1>Services</h1>
+  <h2>We deliver high-quality software with value-based pricing.</h2>
   <br />
   Stoa Medical offers three tiers to meet your needs:
   <ol>
-    <li>Free usage for open-source projects (AGPL license)</li>
-    <li>Licensed open-core software for corporate use</li>
     <li>Custom design + development for you ✨ and your team ✨</li>
+    <li>Free product usage for open-source projects (AGPL license)</li>
+    <li>Licensed product usage for corporate use</li>
   </ol>
   We charge fixed-rate per project and offer 1-year post-deployment support (included
   in the price). Unlike traditional devshops that charge per-hour, we believe this
