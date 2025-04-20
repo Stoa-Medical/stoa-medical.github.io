@@ -18,37 +18,47 @@
     }
 </script>
 
-<div class="navbar serif-font">
-    <div class="flex items-center justify-between w-full">
-        <a href="/">
-            <img class="rounded-md" src={isDark() ? "/Logomark-light.svg" : "/Logomark.svg"} alt={"Stoa Medical's logomark: the sigma (summation) integrated with a snake"} width="32rem" height="32rem"/>
-        </a>
-        <nav>
-            <ul class="flex items-center gap-6">
-                <li><a href="/products">Products</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="https://github.com/Stoa-Medical" class="theme-toggle"><GitHubIcon/></a></li>
-                <li>
-                    <button 
-                        class="theme-toggle"
-                        onclick={updateTheme}
-                    >
-                    <LightbulbIcon />
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+<header class="navbar serif-font">
+    <a href="/" class="brand">
+        <img class="rounded-md" src={isDark() ? "/Logomark-light.svg" : "/Logomark.svg"} alt={"Stoa Medical's logomark: the sigma (summation) integrated with a snake"} width="32" height="32"/>
+    </a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/products">Products</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="https://github.com/Stoa-Medical" class="theme-toggle" aria-label="GitHub"><GitHubIcon dark={isDark()}/></a></li>
+            <li>
+                <button 
+                    class="theme-toggle"
+                    onclick={updateTheme}
+                    aria-label="Toggle theme"
+                >
+                <LightbulbIcon dark={isDark()}/>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <style>
     .navbar {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         padding: 1rem;
-        position: relative;
+    }
+    
+    .brand {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
     }
     
     .theme-toggle {
