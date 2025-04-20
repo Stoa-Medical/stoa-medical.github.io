@@ -1,5 +1,5 @@
 <script>
-    export let dark = false;
+  let { dark = false } = $props();
 </script>
 
 {#if dark}

@@ -1,5 +1,5 @@
 <script>
-  export let dark = false; // Default to light mode if not specified
+  let { dark = false } = $props();
 </script>
 
 {#if dark}
