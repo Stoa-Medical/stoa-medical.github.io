@@ -3,26 +3,30 @@
   import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
   import { browser } from "$app/environment";
 
-  // Session-only theme state (default: light)
+  // Theme state will now be managed by the LightbulbIcon component
   let theme = $state("light");
-  let isDark = $derived(() => theme === "dark");
+  let isDark = $derived(theme === "dark");
 
+  // Initialize theme from system preference or stored preference
   $effect(() => {
     if (browser) {
-      document.documentElement.setAttribute("data-theme", theme);
+      // This initial check helps match the icon with the theme applied by LightbulbIcon
+      const storedTheme = localStorage.getItem("theme");
+      
+      if (storedTheme) {
+        theme = storedTheme;
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = "dark";
+      }
     }
   });
-
-  function updateTheme() {
-    theme = theme === "dark" ? "light" : "dark";
-  }
 </script>
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
     <img
       class="rounded-md"
-      src={isDark() ? "/Logomark-light.svg" : "/Logomark.svg"}
+      src={isDark ? "/Logomark-light.svg" : "/Logomark.svg"}
       alt={"Stoa Medical's logomark: the sigma (summation) integrated with a snake"}
       width="32"
       height="32"
@@ -37,17 +41,11 @@
         <a
           href="https://github.com/Stoa-Medical"
           class="theme-toggle"
-          aria-label="GitHub"><GitHubIcon dark={isDark()} /></a
+          aria-label="GitHub"><GitHubIcon dark={isDark} /></a
         >
       </li>
       <li>
-        <button
-          class="theme-toggle"
-          onclick={updateTheme}
-          aria-label="Toggle theme"
-        >
-          <LightbulbIcon dark={isDark()} />
-        </button>
+        <LightbulbIcon />
       </li>
     </ul>
   </nav>

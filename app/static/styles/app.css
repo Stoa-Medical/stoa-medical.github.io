@@ -68,8 +68,8 @@
 } /* End of :root */
 
 /* Apply DARK theme overrides */
-/* Ensure your JS toggles the '.dark' class on <html> or use '[data-theme="dark"]' */
-:root.dark {
+/* Using data-theme="dark" attribute */
+[data-theme="dark"] {
   --bg-primary: var(--bg-primary-dark);
   --bg-secondary: var(--bg-secondary-dark);
   --text-primary: var(--text-primary-dark);
@@ -114,8 +114,16 @@ h6 {
 }
 
 a {
-  color: var(--ink);
-  transition: color 0.3s ease;
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 2px;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-secondary);
+  text-decoration-color: var(--text-secondary);
 }
 
 /* Styling for inline SVGs using theme variables */
