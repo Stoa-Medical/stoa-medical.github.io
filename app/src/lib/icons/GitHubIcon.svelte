@@ -1,3 +1,4 @@
+<!-- From: https://flowbite.com/icons/ -->
 <script>
   import { theme } from '$lib/stores/theme';
   

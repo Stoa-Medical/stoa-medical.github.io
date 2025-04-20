@@ -2,6 +2,9 @@
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
   import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
   import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+  import CashIcon from "$lib/icons/CashIcon.svelte";
+  import LaptopCodeIcon from "$lib/icons/LaptopCodeIcon.svelte";
+  import ProfileIcon from "$lib/icons/ProfileIcon.svelte";
 </script>
 
 <header class="navbar serif-font">
@@ -10,9 +13,24 @@
   </a>
   <nav>
     <ul class="nav-links">
-      <li><a href="/products">Products</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/about">About</a></li>
+      <li>
+        <a href="/products" class="nav-link">
+          <span class="nav-text">Products</span>
+          <span class="nav-icon"><LaptopCodeIcon /></span>
+        </a>
+      </li>
+      <li>
+        <a href="/services" class="nav-link">
+          <span class="nav-text">Services</span>
+          <span class="nav-icon"><CashIcon /></span>
+        </a>
+      </li>
+      <li>
+        <a href="/about" class="nav-link">
+          <span class="nav-text">About</span>
+          <span class="nav-icon"><ProfileIcon /></span>
+        </a>
+      </li>
       <li>
         <a
           href="https://github.com/Stoa-Medical"
@@ -45,6 +63,44 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Show text on desktop, hide icon */
+  .nav-icon {
+    display: none;
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 0.2rem;
+    }
+
+    /* Hide text on mobile, show icon */
+    .nav-text {
+      display: none;
+    }
+
+    .nav-icon {
+      display: block;
+      padding: 0.4rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.2s ease;
+    }
+
+    /* Hover effects for mobile icons */
+    :global([data-theme="dark"]) .nav-link:hover .nav-icon {
+      background-color: var(--sea-mid);
+    }
+
+    :global([data-theme="light"]) .nav-link:hover .nav-icon {
+      background-color: var(--papyrus-mid);
+    }
   }
 
   .theme-toggle {
