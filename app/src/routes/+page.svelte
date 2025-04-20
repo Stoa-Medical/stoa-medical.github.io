@@ -1,3 +1,7 @@
+<script>
+    import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+</script>
+
 <main class="columns">
   <section class="left-col">
     <h1>Stoa Medical</h1>
@@ -13,10 +17,7 @@
     </p>
   </section>
   <aside class="right-col">
-    <img
-      src="/Logomark.svg"
-      alt="Stoa Medical's logomark: the sigma (summation) integrated with a snake"
-    />
+    <StoaMedicalIcon></StoaMedicalIcon>
   </aside>
 </main>
 

@@ -1,21 +1,12 @@
 <script>
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
   import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
-  import { theme } from '$lib/stores/theme';
-  
-  // Subscribe to the theme store for the logo
-  let isDark = $derived($theme === 'dark');
+  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
 </script>
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
-    <img
-      class="rounded-md"
-      src={isDark ? "/Logomark-light.svg" : "/Logomark.svg"}
-      alt={"Stoa Medical's logomark: the sigma (summation) integrated with a snake"}
-      width="32"
-      height="32"
-    />
+    <StoaMedicalIcon width={32} height={44} />
   </a>
   <nav>
     <ul class="nav-links">
