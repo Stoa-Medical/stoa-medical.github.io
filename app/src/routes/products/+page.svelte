@@ -1,5 +1,6 @@
 <main>
-  <h1>Our projects focus on integrating biomedicine and wellness.</h1>
+  <h1>Products</h1>
+  <h2>Our projects focus on integrating biomedicine and wellness.</h2>
   <br />
   <p>
     At Stoa, we're committed to building products that empower users — notably
