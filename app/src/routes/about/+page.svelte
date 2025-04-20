@@ -8,6 +8,6 @@
         We believe that by combining data, design, and engineering excellence, we can create a new model of care that is more <strong>personalized, proactive, and user-centric</strong>.
     </p>
     <p>
-        Right now, we're <a href="https://en.wikipedia.org/wiki/Bootstrapping#Business">bootstrapping</a> and <a href="https://www.linkedin.com/in/ericpan64/">a team of one</a>, please reach-out if you'd like to connect!
+        Right now, we're <a href="https://en.wikipedia.org/wiki/Bootstrapping#Business">bootstrapping</a> — please <a href="https://www.linkedin.com/in/ericpan64/">reach-out</a> if you'd like to connect!
     </p>
 </section>
