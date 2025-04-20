@@ -82,6 +82,19 @@
   /* --button-text: var(--text-primary-dark); */
 }
 
+/* Full height styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Custom Base Styles */
 /* Apply base styles using the GENERIC theme variables */
 body {

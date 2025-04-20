@@ -3,12 +3,34 @@
   import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
-<div class="flex flex-col w-full">
-  <header class="p-4">
+<div class="layout-container">
+  <header>
     <Navbar />
   </header>
-  <!-- TODO: Replace the slot with a snippet (Svelte 5) -->
-  <div class="p-4">
+  <!-- Main content area -->
+  <main>
     <slot />
-  </div>
+  </main>
 </div>
+
+<style>
+  /* Make the layout container fill the entire viewport */
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This is the key property - fill viewport height */
+    width: 100%;
+  }
+
+  /* Style the header */
+  header {
+    padding: 1rem;
+  }
+
+  /* Style the main content area */
+  main {
+    flex: 1; /* This makes the main content expand to fill available space */
+    padding: 1rem;
+    width: 100%;
+  }
+</style>
