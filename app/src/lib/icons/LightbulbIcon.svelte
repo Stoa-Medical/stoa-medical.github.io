@@ -1,17 +1,13 @@
 <!-- From: https://flowbite.com/icons/ -->
 
 <script>
-  import { theme, toggleTheme } from '$lib/stores/theme';
-  
+  import { theme, toggleTheme } from "$lib/stores/theme";
+
   // Subscribe to the theme store (automatically handled by Svelte)
-  let isDark = $derived($theme === 'dark');
+  let isDark = $derived($theme === "dark");
 </script>
 
-<button
-  class="theme-toggle"
-  onclick={toggleTheme}
-  aria-label="Toggle theme"
->
+<button class="theme-toggle" onclick={toggleTheme} aria-label="Toggle theme">
   {#if isDark}
     <!-- Dark mode lightbulb -->
     <svg

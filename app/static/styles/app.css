@@ -83,7 +83,8 @@
 }
 
 /* Full height styles */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -138,7 +139,9 @@ a {
   text-decoration: underline;
   text-decoration-color: var(--accent);
   text-underline-offset: 2px;
-  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    text-decoration-color 0.3s ease;
 }
 
 a:hover {

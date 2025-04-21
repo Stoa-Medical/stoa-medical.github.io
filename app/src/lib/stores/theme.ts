@@ -1,11 +1,11 @@
-import { writable, type Writable } from 'svelte/store';
-import { browser } from '$app/environment';
-import { 
-  getInitialTheme, 
-  applyTheme, 
+import { writable, type Writable } from "svelte/store";
+import { browser } from "$app/environment";
+import {
+  getInitialTheme,
+  applyTheme,
   watchTheme,
-  type Theme 
-} from '$lib/utils/theme';
+  type Theme,
+} from "$lib/utils/theme";
 
 // Create a store with the initial theme value
 export const theme: Writable<Theme> = writable(getInitialTheme());
@@ -28,7 +28,7 @@ if (browser) {
  * Toggle between light and dark theme
  */
 export function toggleTheme(): void {
-  theme.update((current: Theme): Theme => 
-    current === 'dark' ? 'light' : 'dark'
+  theme.update(
+    (current: Theme): Theme => (current === "dark" ? "light" : "dark"),
   );
-} 
+}

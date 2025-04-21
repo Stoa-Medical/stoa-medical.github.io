@@ -1,6 +1,6 @@
 <script>
-    import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
-    import { theme } from "$lib/stores/theme";
+  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+  import { theme } from "$lib/stores/theme";
 </script>
 
 <section class="columns">
@@ -18,7 +18,8 @@
     </p>
   </section>
   <aside class="right-col">
-    <StoaMedicalIcon variant={$theme === 'dark' ? 'grey' : 'tan'}></StoaMedicalIcon>
+    <StoaMedicalIcon variant={$theme === "dark" ? "grey" : "tan"}
+    ></StoaMedicalIcon>
   </aside>
 </section>
 
