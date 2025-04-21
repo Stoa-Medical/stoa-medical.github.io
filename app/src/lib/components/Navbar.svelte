@@ -1,10 +1,7 @@
 <script>
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
-  import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
   import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
-  import CashIcon from "$lib/icons/CashIcon.svelte";
-  import LaptopCodeIcon from "$lib/icons/LaptopCodeIcon.svelte";
-  import ProfileIcon from "$lib/icons/ProfileIcon.svelte";
+  import FlowbiteIcon from "$lib/icons/FlowbiteIcon.svelte";
 </script>
 
 <header class="navbar serif-font">
@@ -16,26 +13,26 @@
       <li>
         <a href="/products" class="nav-link">
           <span class="nav-text">Products</span>
-          <span class="nav-icon"><LaptopCodeIcon /></span>
+          <span class="nav-icon"><FlowbiteIcon type="laptop-code" /></span>
         </a>
       </li>
       <li>
         <a href="/services" class="nav-link">
           <span class="nav-text">Services</span>
-          <span class="nav-icon"><CashIcon /></span>
+          <span class="nav-icon"><FlowbiteIcon type="cash" /></span>
         </a>
       </li>
       <li>
         <a href="/about" class="nav-link">
           <span class="nav-text">About</span>
-          <span class="nav-icon"><ProfileIcon /></span>
+          <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
         </a>
       </li>
       <li>
         <a
           href="https://github.com/Stoa-Medical"
           class="theme-toggle"
-          aria-label="GitHub"><GitHubIcon /></a
+          aria-label="GitHub"><FlowbiteIcon type="github" /></a
         >
       </li>
       <li>
