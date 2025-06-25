@@ -6,6 +6,14 @@ _tmp/
 .specstory/
 .windsurfrules
 .cursor/
+.specstory/.what-is-this.md
+.specstory/
+.cursorindexingignore
+.paic/
+CLAUDE.md
+codebase.md
+diff.txt
+temp.txt
 
 # Logs
 logs
