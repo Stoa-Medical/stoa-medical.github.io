@@ -8,13 +8,13 @@
     <h1>Stoa Medical</h1>
     <br />
     <h2>
-      We build <strong>open-core software</strong> to integrate biomedicine and wellness.
+      Your <strong>one-stop shop</strong> for integrating your EHR with AI.
     </h2>
     <br />
     <p>
       We're currently building <a href="https://github.com/Stoa-Medical/Portico"
         >Portico</a
-      > - an agentic integration engine.
+      > -- an agentic integration engine.
     </p>
   </section>
   <aside class="right-col">
