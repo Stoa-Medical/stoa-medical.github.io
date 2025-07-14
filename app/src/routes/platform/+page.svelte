@@ -1,5 +1,5 @@
 <section>
-  <h1>Products</h1>
+  <h1>Platform</h1>
   <h2>We build custom software so you don't have to (unless you want of course)</h2>
   <p>
     At Stoa, we're committed to building products that empower users — notably
@@ -13,6 +13,4 @@
     -- an agentic interface engine. We're in the process of building out more products
     centered around augmenting EHR integrations through first-principles data modeling and AI-powered code generation (from my experiences as an engineer working with EHRs, FHIR APIs, and academic AI researchers).
   </p>
-
-  // TODO: Add graphic of product logos and dependencies, highlight on hover, Portico as first, and interdependent links as things get developed. Include logo with name and without name as relevant.
 </section>

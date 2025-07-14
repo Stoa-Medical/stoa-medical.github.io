@@ -35,13 +35,6 @@
     Note that being a customer is NOT the same as being a design partner.
   </p>
 
-
-  // NOTES BELOW:
-  - Services: 
-    - Product implementation: fixed-rate per project, 1-year post-deployment support included. Can deploy it for you (or you can do it yourself, though will probably take longer)
-    - Integration consulting: fixed-rate per hour, $200 USD/hour base. Free 30-minute discovery call / consultation
-    - Custom developerment: fixed rate per project, 1-year post-deployment support. Discount on per-project evaluation
-  - June 2025: first cohort of customers receive lifetime license and upgrades for free. If you're a healthcare organization looking for the next-generation EHR integration engine, reach-out here
 </section>
 
 <style>

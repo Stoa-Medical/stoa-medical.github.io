@@ -1,9 +1,9 @@
 <section>
-  <h1>About</h1>
-  <h2>Stoa Medical is on a mission to fix how healthcare works.</h2>
+  <h1>A Stoa for Healthcare</h1>
+  <h2>We're on a mission to fix how healthcare works.</h2>
   
   <p>
-    In ancient Greece and Rome, <a href="https://en.wikipedia.org/wiki/Stoa">Stoas</a> were open spaces where people gathered openly to exchange ideas and connect.
+    In ancient Greece and Rome, <a href="https://en.wikipedia.org/wiki/Stoa">Stoae</a> were open spaces where people gathered openly to exchange ideas and connect.
   </p>
   
   <p>

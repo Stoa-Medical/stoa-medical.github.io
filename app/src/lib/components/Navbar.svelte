@@ -11,14 +11,14 @@
   <nav>
     <ul class="nav-links">
       <li>
-        <a href="/about" class="nav-link">
-          <span class="nav-text">About</span>
+        <a href="/company" class="nav-link">
+          <span class="nav-text">Company</span>
           <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
         </a>
       </li>
       <li>
-        <a href="/products" class="nav-link">
-          <span class="nav-text">Products</span>
+        <a href="/platform" class="nav-link">
+          <span class="nav-text">Platform</span>
           <span class="nav-icon"><FlowbiteIcon type="laptop-code" /></span>
         </a>
       </li>
