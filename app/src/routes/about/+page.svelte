@@ -2,12 +2,16 @@
   <h1>About</h1>
   <h2>Stoa Medical is on a mission to fix how healthcare works.</h2>
   <p>
-    In ancient Greece, the Stoa was an open space where people gathered to discuss ideas on how to foster wellness.
-  
+    In ancient Greece and Rome, <a href="https://en.wikipedia.org/wiki/Stoa">Stoas</a> were open spaces where people gathered openly to exchange ideas and connect.
+    <br />
     Times have changed. Technology has given us more optionality than ever, and the modern struggle becomes quality, trust, and mutual respect.
-
-    At Stoa, we believe that technology should be a force for good. We're building innovative technology that empowers patients, providers, and
-    people within healthcare organizations to make better decisions and improve outcomes. It's open-source, open-weights, and open-minded.
+    <br />
+    At Stoa Medical, we believe that technology should be a force for good. 
+    <br />
+    We're building innovative technology that empowers patients, providers, and
+    people within healthcare organizations to make better decisions and improve outcomes.
+    <br />
+    It's built in the open: source-available, open-weights, and open-minded.
   </p>
   <p>
     We believe that by combining data, design, and engineering excellence, we

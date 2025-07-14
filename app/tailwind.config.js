@@ -5,7 +5,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Cormorant Garamond", "serif"], // Override the default sans font
+        // Default sans font -> Helvetica Regular
+        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        // Primary serif font -> EB Garamond
+        garamond: ["EB Garamond", "serif"],
+      },
+      letterSpacing: {
+        // -1% for Helvetica Regular
+        sans: "-0.01em",
+        // -2% for EB Garamond Medium
+        garamond: "-0.02em",
+        // +1% for EB Garamond Regular (optional second serif)
+        "garamond-wide": "0.01em",
       },
     },
   },

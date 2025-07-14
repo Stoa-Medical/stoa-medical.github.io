@@ -1,5 +1,5 @@
 <script>
-  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+  import StoaIcon from "$lib/components/icons/StoaIcon.svelte";
   import { theme } from "$lib/stores/theme";
 </script>
 
@@ -8,22 +8,33 @@
     <h1>Stoa Medical</h1>
     <br />
     <h2>
-      Your <strong>one-stop shop</strong> for integrating your EHR with AI.
+      Your <strong>one-stop shop</strong> for integrating AI with EHRs.
     </h2>
     <br />
-    <p>
-      We're currently building <a href="https://github.com/Stoa-Medical/Portico"
+    We're a <a href="https://en.wikipedia.org/wiki/Entrepreneurship#Bootstrapping">bootstrapped</a> software startup building in the open.
+    <br />
+    <ul>
+      <li>
+        Services: we're offering custom engineering at a <a href="/services">massive limited-time discount</a>.
+      </li>
+      <li>
+        Product: we're currently building <a href="https://github.com/Stoa-Medical/Portico"
         >Portico</a
       > -- an agentic integration engine.
-    </p>
+      </li>
+    </ul>
   </section>
   <aside class="right-col">
-    <StoaMedicalIcon variant={$theme === "dark" ? "grey" : "tan"}
-    ></StoaMedicalIcon>
+    <StoaIcon variant={$theme === "dark" ? "grey" : "tan"}
+    ></StoaIcon>
   </aside>
 </section>
 
 <style>
+  ul {
+    padding-left: 42px;
+  }
+
   .columns {
     display: flex;
     gap: 2rem;

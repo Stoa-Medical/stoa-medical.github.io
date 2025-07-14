@@ -8,8 +8,10 @@
 /* Base variables like fonts and the raw color palette */
 :root {
   /* Fonts */
-  --font-primary: "Helvetica", sans-serif;
-  --font-secondary: "Cormorant Garamond", serif;
+  /* 1) Helvetica Regular */
+  --font-primary: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  /* 2) EB Garamond (Medium/Regular) */
+  --font-secondary: "EB Garamond", serif;
 
   /* Raw Color Palette */
   --white: #fdfcfb;
@@ -108,6 +110,8 @@ body {
     color 0.3s ease;
   /* Fix for iOS Safari 100vh issue */
   min-height: -webkit-fill-available;
+  /* Helvetica Regular: -1% letter-spacing */
+  letter-spacing: -0.01em;
 }
 
 html {
@@ -118,12 +122,17 @@ h1 {
   font-family: var(--font-secondary);
   color: var(--text-primary);
   font-size: 2.8rem;
+  /* EB Garamond Medium: weight 500 & -2% letter-spacing */
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
 h2 {
   font-family: var(--font-primary);
   color: var(--text-secondary);
   font-size: 1.6rem;
+  /* Helvetica Regular tracking */
+  letter-spacing: -0.01em;
 }
 
 h3,
@@ -147,6 +156,12 @@ a {
 a:hover {
   color: var(--text-secondary);
   text-decoration-color: var(--text-secondary);
+}
+
+ul,
+ol {
+  list-style-type: decimal;
+  padding-left: 42px;
 }
 
 /* Styling for inline SVGs using theme variables */

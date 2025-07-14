@@ -1,6 +1,7 @@
 <!-- src/routes/+layout.svelte -->
 <script>
   import Navbar from "$lib/components/Navbar.svelte";
+  import "../app.css";
 </script>
 
 <div class="layout-container">

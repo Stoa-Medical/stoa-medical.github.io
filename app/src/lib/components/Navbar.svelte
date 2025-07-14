@@ -1,15 +1,21 @@
 <script>
-  import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
-  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
-  import FlowbiteIcon from "$lib/icons/FlowbiteIcon.svelte";
+  import LightbulbIcon from "$lib/components/icons/LightbulbIcon.svelte";
+  import StoaIcon from "$lib/components/icons/StoaIcon.svelte";
+  import FlowbiteIcon from "$lib/components/icons/FlowbiteIcon.svelte";
 </script>
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
-    <StoaMedicalIcon width={32} height={44} />
+    <StoaIcon width={32} height={44} />
   </a>
   <nav>
     <ul class="nav-links">
+      <li>
+        <a href="/about" class="nav-link">
+          <span class="nav-text">About</span>
+          <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
+        </a>
+      </li>
       <li>
         <a href="/products" class="nav-link">
           <span class="nav-text">Products</span>
@@ -20,12 +26,6 @@
         <a href="/services" class="nav-link">
           <span class="nav-text">Services</span>
           <span class="nav-icon"><FlowbiteIcon type="cash" /></span>
-        </a>
-      </li>
-      <li>
-        <a href="/about" class="nav-link">
-          <span class="nav-text">About</span>
-          <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
         </a>
       </li>
       <li>
