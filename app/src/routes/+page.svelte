@@ -6,13 +6,15 @@
 <section class="columns">
   <section class="left-col">
     <h1>Stoa Medical</h1>
-    <br />
+    
     <h2>
       Your <strong>one-stop shop</strong> for integrating AI with EHRs.
     </h2>
-    <br />
-    We're a <a href="https://en.wikipedia.org/wiki/Entrepreneurship#Bootstrapping">bootstrapped</a> software startup building in the open.
-    <br />
+    
+    <p>
+      We're a <a href="https://en.wikipedia.org/wiki/Entrepreneurship#Bootstrapping">bootstrapped</a> software startup building in the open.
+    </p>
+    
     <ul>
       <li>
         Services: we're offering custom engineering at a <a href="/services">massive limited-time discount</a>.
