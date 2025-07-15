@@ -56,13 +56,8 @@
     border-radius: 0.375rem;
   }
 
-  .theme-toggle:hover {
-    background-color: var(--accent);
-  }
-
   .lightbulb {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--text-primary);
   }
 </style>
