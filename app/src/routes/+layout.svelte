@@ -2,7 +2,47 @@
 <script>
   import Navbar from "$lib/components/Navbar.svelte";
   import "../app.css";
+
+  const { data } = $props();
 </script>
+
+<svelte:head>
+  <title>{data?.meta?.title || "Stoa Medical"}</title>
+  <meta
+    name="description"
+    content={data?.meta?.description ||
+      "AI-ready data integration for modern healthcare"}
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content={data?.meta?.ogType || "website"} />
+  <meta property="og:title" content={data?.meta?.title || "Stoa Medical"} />
+  <meta
+    property="og:description"
+    content={data?.meta?.description ||
+      "AI-ready data integration for modern healthcare"}
+  />
+  {#if data?.meta?.ogImage}
+    <meta property="og:image" content={data.meta.ogImage} />
+  {/if}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content={data?.meta?.twitterCard || "summary"} />
+  <meta name="twitter:title" content={data?.meta?.title || "Stoa Medical"} />
+  <meta
+    name="twitter:description"
+    content={data?.meta?.description ||
+      "AI-ready data integration for modern healthcare"}
+  />
+  {#if data?.meta?.ogImage}
+    <meta name="twitter:image" content={data.meta.ogImage} />
+  {/if}
+
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://stoamedical.com" />
+</svelte:head>
 
 <div class="layout-container">
   <header>

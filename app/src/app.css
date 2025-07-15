@@ -31,13 +31,15 @@
   --success-mid: #a2eacb;
   --warning: #eebd8e;
   --warning-mid: #f8dabe;
+  --bronze: #c19a6b;
+  --navy: #0d1b2a;
 
   /* Define the specific color/style values for light and dark themes. */
   --bg-primary-light: var(--white);
   --bg-secondary-light: var(--papyrus-light);
   --text-primary-light: var(--ink);
   --text-secondary-light: #545260;
-  --accent-light: var(--papyrus);
+  --accent-light: var(--bronze);
   --logo-filter-light: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
   /* --border-color-light: var(--ink-mid); */
   /* --link-color-light: var(--accent-light); */

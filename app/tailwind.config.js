@@ -18,6 +18,10 @@ export default {
         // +1% for EB Garamond Regular (optional second serif)
         "garamond-wide": "0.01em",
       },
+      colors: {
+        navy: "#0D1B2A",
+        bronze: "#C19A6B",
+      },
     },
   },
   plugins: [],

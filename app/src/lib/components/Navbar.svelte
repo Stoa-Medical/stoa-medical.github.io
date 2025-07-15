@@ -54,6 +54,9 @@
       <li>
         <span class="nav-link nav-icon rounded"><LightbulbIcon /></span>
       </li>
+      <li>
+        <a href="/book" class="cta-button"> Book a Call </a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -98,9 +101,9 @@
     opacity: 0;
     margin-left: 0;
     transition:
-      max-width 0.3s ease,
-      opacity 0.25s ease,
-      margin-left 0.3s ease;
+      max-width 0.15s ease,
+      opacity 0.15s ease,
+      margin-left 0.15s ease;
   }
 
   /* On hover/focus, reveal the text and push the icon aside */
@@ -124,5 +127,29 @@
   }
   :global([data-theme="light"]) .nav-link:hover {
     background-color: var(--papyrus-mid);
+  }
+
+  /* CTA Button styles */
+  .cta-button {
+    padding: 0.375rem 1rem;
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+  }
+
+  .cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 640px) {
+    .cta-button {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+    }
   }
 </style>
