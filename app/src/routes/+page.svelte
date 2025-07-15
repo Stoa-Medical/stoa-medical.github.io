@@ -6,29 +6,33 @@
 <section class="columns">
   <section class="left-col">
     <h1>Stoa Medical</h1>
-    
+
     <h2>
       Your <strong>one-stop shop</strong> for integrating AI with EHRs.
     </h2>
-    
+
     <p>
-      We're a <a href="https://en.wikipedia.org/wiki/Entrepreneurship#Bootstrapping">bootstrapped</a> software startup building in the open.
+      We're a <a
+        href="https://en.wikipedia.org/wiki/Entrepreneurship#Bootstrapping"
+        >bootstrapped</a
+      > software startup building in the open.
     </p>
-    
+
     <ul>
       <li>
-        Services: we're offering custom engineering at a <a href="/services">massive limited-time discount</a>.
+        Services: we're offering custom engineering at a <a href="/services"
+          >massive limited-time discount</a
+        >.
       </li>
       <li>
-        Product: we're currently building <a href="https://github.com/Stoa-Medical/Portico"
-        >Portico</a
-      > -- an agentic integration engine.
+        Product: we're currently building <a
+          href="https://github.com/Stoa-Medical/Portico">Portico</a
+        > -- an agentic integration engine.
       </li>
     </ul>
   </section>
   <aside class="right-col">
-    <StoaIcon variant={$theme === "dark" ? "grey" : "tan"}
-    ></StoaIcon>
+    <StoaIcon variant={$theme === "dark" ? "grey" : "tan"}></StoaIcon>
   </aside>
 </section>
 

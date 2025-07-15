@@ -52,7 +52,7 @@
         </a>
       </li>
       <li>
-          <span class="nav-link nav-icon rounded"><LightbulbIcon /></span>
+        <span class="nav-link nav-icon rounded"><LightbulbIcon /></span>
       </li>
     </ul>
   </nav>
@@ -97,15 +97,18 @@
     max-width: 0;
     opacity: 0;
     margin-left: 0;
-    transition: max-width 0.30s ease, opacity 0.25s ease, margin-left 0.30s ease;
+    transition:
+      max-width 0.3s ease,
+      opacity 0.25s ease,
+      margin-left 0.3s ease;
   }
 
   /* On hover/focus, reveal the text and push the icon aside */
   .nav-link:hover .nav-text,
   .nav-link:focus-visible .nav-text {
-    max-width: 10rem;        /* long enough for any label */
+    max-width: 10rem; /* long enough for any label */
     opacity: 1;
-    margin-left: 0.25rem;    /* small gap between icon and text */
+    margin-left: 0.25rem; /* small gap between icon and text */
     color: var(--ink);
   }
 
