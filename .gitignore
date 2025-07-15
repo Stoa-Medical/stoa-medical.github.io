@@ -16,6 +16,9 @@ diff.txt
 temp.txt
 digest.txt
 
+# SvelteKit
+.svelte-kit/
+
 # Logs
 logs
 *.log
