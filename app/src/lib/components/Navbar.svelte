@@ -6,14 +6,14 @@
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
-    <StoaIcon width={32} height={44} />
+    <StoaIcon width={42} height={50} />
   </a>
   <nav>
     <ul class="nav-links">
       <li>
         <a href="/company" class="nav-link">
           <span class="nav-text">Company</span>
-          <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
+          <span class="nav-icon"><FlowbiteIcon type="company" /></span>
         </a>
       </li>
       <li>
@@ -31,9 +31,11 @@
       <li>
         <a
           href="https://github.com/Stoa-Medical"
-          class="theme-toggle"
-          aria-label="GitHub"><FlowbiteIcon type="github" /></a
-        >
+          target="_blank"
+          class="nav-link"
+          aria-label="GitHub">
+          <span class="nav-text">GitHub</span>
+          <span class="nav-icon"><FlowbiteIcon type="github" /></span>
       </li>
       <li>
         <LightbulbIcon />
@@ -48,7 +50,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .brand {
@@ -59,7 +61,7 @@
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
 
   .nav-link {
@@ -100,19 +102,4 @@
     }
   }
 
-  .theme-toggle {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-  }
-
-  :global([data-theme="dark"]) .theme-toggle:hover {
-    background-color: var(--sea-mid);
-  }
-
-  :global([data-theme="light"]) .theme-toggle:hover {
-    background-color: var(--papyrus-mid);
-  }
 </style>

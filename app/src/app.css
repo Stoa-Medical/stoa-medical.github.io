@@ -133,6 +133,7 @@ h2 {
   font-size: 1.6rem;
   /* Helvetica Regular tracking */
   letter-spacing: -0.01em;
+  margin: 1.5rem 0 1.5rem;
 }
 
 h3,
@@ -141,6 +142,12 @@ h5,
 h6 {
   font-family: var(--font-primary);
   color: var(--text-secondary);
+  margin: 1.5rem 0 0.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  max-width: 75ch;
 }
 
 a {
@@ -162,6 +169,11 @@ ul,
 ol {
   list-style-type: decimal;
   padding-left: 42px;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 /* Styling for inline SVGs using theme variables */
