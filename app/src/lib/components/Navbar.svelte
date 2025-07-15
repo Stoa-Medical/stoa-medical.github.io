@@ -11,21 +11,33 @@
   <nav>
     <ul class="nav-links">
       <li>
+        <a href="/platform" class="nav-link">
+          <span class="nav-icon"><FlowbiteIcon type="platform" /></span>
+          <span class="nav-text">Platform</span>
+        </a>
+      </li>
+      <li>
+        <a href="/services" class="nav-link">
+          <span class="nav-icon"><FlowbiteIcon type="services" /></span>
+          <span class="nav-text">Services</span>
+        </a>
+      </li>
+      <li>
+        <a href="/solutions" class="nav-link">
+          <span class="nav-icon"><FlowbiteIcon type="solutions" /></span>
+          <span class="nav-text">Solutions</span>
+        </a>
+      </li>
+      <li>
         <a href="/company" class="nav-link">
           <span class="nav-icon"><FlowbiteIcon type="company" /></span>
           <span class="nav-text">Company</span>
         </a>
       </li>
       <li>
-        <a href="/platform" class="nav-link">
-          <span class="nav-icon"><FlowbiteIcon type="laptop-code" /></span>
-          <span class="nav-text">Platform</span>
-        </a>
-      </li>
-      <li>
-        <a href="/services" class="nav-link">
-          <span class="nav-icon"><FlowbiteIcon type="cash" /></span>
-          <span class="nav-text">Services</span>
+        <a href="/resources" class="nav-link">
+          <span class="nav-icon"><FlowbiteIcon type="resources" /></span>
+          <span class="nav-text">Resources</span>
         </a>
       </li>
       <li>
@@ -35,7 +47,7 @@
           class="nav-link"
           aria-label="GitHub"
         >
-          <span class="nav-icon"><FlowbiteIcon type="github" /></span>
+          <span class="nav-icon"><FlowbiteIcon type="code" /></span>
           <span class="nav-text">GitHub</span>
         </a>
       </li>
