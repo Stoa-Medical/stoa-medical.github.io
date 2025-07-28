@@ -57,6 +57,14 @@
   </div>
 </section>
 
+
+<section class="solution-section">
+  <h2> Before Stoa</h2>
+
+  <h2> After Stoa </h2>
+
+</section>
+
 <!-- Founder Credibility -->
 <section class="social-proof">
   <div class="proof-strip">

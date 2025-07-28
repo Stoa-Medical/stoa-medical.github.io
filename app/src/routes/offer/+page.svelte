@@ -383,7 +383,7 @@
     <Button href="#apply" variant="primary" size="large">
       Claim Your Founding Partner Spot →
     </Button>
-    <p class="cta-disclaimer">Only {spotsRemaining} spots remaining • No obligation to proceed after application</p>
+    <p class="cta-disclaimer">Only {spotsRemaining} slots available for Q{currentQuarter} • No obligation to proceed after application</p>
   </div>
 </section>
 
