@@ -1,88 +1,122 @@
 <script>
   import VerticalDivider from "$lib/components/atoms/VerticalDivider.svelte";
+  import LogoMark from "$lib/components/atoms/LogoMark.svelte";
 
   let { class: className = "" } = $props();
 </script>
 
 <section class="hero-section {className}">
   <div class="hero-section__container">
-    <div class="hero-section__left">
-      <slot name="left" />
+    <div class="hero-section__logo">
+      <LogoMark size="md" />
     </div>
-    <div class="hero-section__divider">
-      <VerticalDivider sticky={true} />
+
+    <div class="hero-section__content">
+      <slot name="content" />
     </div>
-    <div class="hero-section__right">
-      <slot name="right" />
+
+    <div class="hero-section__bottom">
+      <div class="hero-section__bottom-left">
+        <slot name="subtitle" />
+      </div>
+      <div class="hero-section__bottom-center">
+        <VerticalDivider sticky={false} />
+      </div>
+      <div class="hero-section__bottom-right">
+        <slot name="nav" />
+      </div>
     </div>
   </div>
-  {#if $$slots.below}
-    <div class="hero-section__below">
-      <slot name="below" />
-    </div>
-  {/if}
 </section>
 
 <style>
   .hero-section {
     width: 100%;
-    min-height: 80vh;
-    padding: 4rem 2rem;
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    align-items: stretch;
   }
 
   .hero-section__container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-section__logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .hero-section__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .hero-section__bottom {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    gap: 3rem;
-    align-items: center;
-    min-height: 60vh;
-  }
-
-  .hero-section__left {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .hero-section__divider {
+    align-items: flex-end;
+    padding: 0 2rem;
     position: relative;
-    height: 100%;
   }
 
-  .hero-section__right {
+  .hero-section__bottom-left {
+    text-align: left;
+  }
+
+  .hero-section__bottom-center {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
   }
 
-  .hero-section__below {
-    margin-top: 4rem;
-    text-align: center;
+  .hero-section__bottom-center :global(.vertical-divider) {
+    height: 100px;
+    position: absolute;
+    bottom: -2rem;
+  }
+
+  .hero-section__bottom-right {
+    text-align: right;
   }
 
   @media (max-width: 768px) {
-    .hero-section {
-      padding: 2rem 1rem;
-      min-height: auto;
-    }
-
     .hero-section__container {
+      padding: 1rem;
+    }
+
+    .hero-section__logo {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .hero-section__content {
+      padding: 0 1rem;
+    }
+
+    .hero-section__bottom {
       grid-template-columns: 1fr;
-      gap: 2rem;
-      min-height: auto;
-    }
-
-    .hero-section__divider {
-      display: none;
-    }
-
-    .hero-section__left,
-    .hero-section__right {
-      justify-content: center;
+      gap: 1rem;
       text-align: center;
+    }
+
+    .hero-section__bottom-left,
+    .hero-section__bottom-right {
+      text-align: center;
+    }
+
+    .hero-section__bottom-center {
+      display: none;
     }
   }
 </style>

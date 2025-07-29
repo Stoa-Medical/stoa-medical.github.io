@@ -64,28 +64,47 @@
 </svelte:head>
 
 <LandingLayout>
-  <svelte:fragment slot="hero">
-    <HeroSection>
-      <svelte:fragment slot="left">
-        <HeroCopy
-          headline="We're building the future of EHR integrations with AI agents, workflows and software."
-          sub="An AI Healthcare Integrations Company"
+  <HeroSection>
+    <svelte:fragment slot="content">
+      <HeroCopy
+        headline="We're building the future of EHR integrations with AI agents, workflows and software."
+      >
+        <LinkButton
+          href="https://cal.com/eric-pan/intro"
+          external={true}
+          variant="ghost"
         >
-          <LinkButton href="https://cal.com/eric-pan/intro" external={true}>
-            Book a call ↗
-          </LinkButton>
-        </HeroCopy>
-      </svelte:fragment>
-      <svelte:fragment slot="below">
-        <p
-          style="color: var(--text-secondary-dark); font-size: 1.125rem; max-width: 600px; margin: 0 auto;"
+          Book a call ↗
+        </LinkButton>
+      </HeroCopy>
+    </svelte:fragment>
+    <svelte:fragment slot="subtitle">
+      <p
+        style="color: var(--text-secondary-dark); font-size: 0.875rem; margin: 0;"
+      >
+        An AI Healthcare Integrations Company
+      </p>
+    </svelte:fragment>
+    <svelte:fragment slot="nav">
+      <nav style="display: flex; gap: 2rem; font-size: 0.875rem;">
+        <a
+          href="/about"
+          style="color: var(--text-secondary-dark); text-decoration: none;"
+          >About</a
         >
-          You've been there. Waiting months for simple EHR feeds and every
-          integration feels slow.
-        </p>
-      </svelte:fragment>
-    </HeroSection>
-  </svelte:fragment>
+        <a
+          href="/products"
+          style="color: var(--text-secondary-dark); text-decoration: none;"
+          >Products</a
+        >
+        <a
+          href="/services"
+          style="color: var(--text-secondary-dark); text-decoration: none;"
+          >Services</a
+        >
+      </nav>
+    </svelte:fragment>
+  </HeroSection>
 
   <section style="padding: 4rem 2rem; text-align: center;">
     <h2

@@ -4,7 +4,6 @@
 </script>
 
 <div class="layout-container">
-
   <!-- Main content area -->
   <main>
     <slot />
@@ -21,10 +20,6 @@
     overflow-x: hidden; /* Prevent horizontal overflow */
   }
 
-  /* Style the header */
-  header {
-    padding: 1rem;
-  }
 
   /* Style the main content area */
   main {
