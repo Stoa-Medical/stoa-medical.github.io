@@ -1,5 +1,4 @@
 <script lang="ts">
-  import LandingLayout from "$lib/components/structures/LandingLayout.svelte";
   import HeroSection from "$lib/components/organisms/HeroSection.svelte";
   import HeroCopy from "$lib/components/molecules/HeroCopy.svelte";
   import LinkButton from "$lib/components/atoms/LinkButton.svelte";
@@ -63,80 +62,80 @@
   />
 </svelte:head>
 
-<LandingLayout>
-  <HeroSection>
-    <svelte:fragment slot="content">
-      <HeroCopy
-        headline="We're building the future of EHR integrations with AI agents, workflows and software."
-      >
-        <LinkButton
-          href="https://cal.com/eric-pan/intro"
-          external={true}
-          variant="ghost"
-        >
-          Book a call ↗
-        </LinkButton>
-      </HeroCopy>
-    </svelte:fragment>
-    <svelte:fragment slot="subtitle">
-      <p
-        style="color: var(--text-secondary-dark); font-size: 0.875rem; margin: 0;"
-      >
-        An AI Healthcare Integrations Company
-      </p>
-    </svelte:fragment>
-    <svelte:fragment slot="nav">
-      <nav style="display: flex; gap: 2rem; font-size: 0.875rem;">
-        <a
-          href="/about"
-          style="color: var(--text-secondary-dark); text-decoration: none;"
-          >About</a
-        >
-        <a
-          href="/products"
-          style="color: var(--text-secondary-dark); text-decoration: none;"
-          >Products</a
-        >
-        <a
-          href="/services"
-          style="color: var(--text-secondary-dark); text-decoration: none;"
-          >Services</a
-        >
-      </nav>
-    </svelte:fragment>
-  </HeroSection>
 
-  <section style="padding: 4rem 2rem; text-align: center;">
-    <h2
-      style="font-family: var(--font-secondary); font-size: 2.5rem; font-weight: 300; margin: 0 0 1rem 0; color: var(--text-primary-dark);"
+<HeroSection>
+  <svelte:fragment slot="content">
+    <HeroCopy
+      headline="We're building the future of EHR integrations with AI agents, workflows and software."
     >
-      The Modern Alternative to Legacy Healthcare Integrations.
-    </h2>
-    <LinkButton href="https://cal.com/eric-pan/intro" external={true}>
-      Book a call ↗
-    </LinkButton>
-  </section>
-
-  <StepList items={steps} />
-
-  {#if logos.length > 0}
-    <SocialProof {logos} />
-  {/if}
-
-  <CaseCarousel cases={caseStudies} />
-
-  <section style="padding: 4rem 2rem;">
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h2
-        style="font-family: var(--font-secondary); font-size: 2rem; font-weight: 300; margin: 0 0 3rem 0; color: var(--text-primary-dark); text-align: center;"
+      <LinkButton
+        href="https://cal.com/eric-pan/intro"
+        external={true}
+        variant="ghost"
       >
-        About Stoa Medical
-      </h2>
-      <ProfileCard
-        name="Stoa Medical Founder, Eric Pan"
-        copy="We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x. We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x. We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x."
-        linkedin="https://linkedin.com"
-      />
-    </div>
-  </section>
-</LandingLayout>
+        Book a call ↗
+      </LinkButton>
+    </HeroCopy>
+  </svelte:fragment>
+  <svelte:fragment slot="subtitle">
+    <p
+      style="color: var(--text-secondary-dark); font-size: 0.875rem; margin: 0;"
+    >
+      An AI Healthcare Integrations Company
+    </p>
+  </svelte:fragment>
+  <svelte:fragment slot="nav">
+    <nav style="display: flex; gap: 2rem; font-size: 0.875rem;">
+      <a
+        href="/about"
+        style="color: var(--text-secondary-dark); text-decoration: none;"
+        >About</a
+      >
+      <a
+        href="/products"
+        style="color: var(--text-secondary-dark); text-decoration: none;"
+        >Products</a
+      >
+      <a
+        href="/services"
+        style="color: var(--text-secondary-dark); text-decoration: none;"
+        >Services</a
+      >
+    </nav>
+  </svelte:fragment>
+</HeroSection>
+
+<section style="padding: 4rem 2rem; text-align: center;">
+  <h2
+    style="font-family: var(--font-secondary); font-size: 2.5rem; font-weight: 300; margin: 0 0 1rem 0; color: var(--text-primary-dark);"
+  >
+    The Modern Alternative to Legacy Healthcare Integrations.
+  </h2>
+  <LinkButton href="https://cal.com/eric-pan/intro" external={true}>
+    Book a call ↗
+  </LinkButton>
+</section>
+
+<StepList items={steps} />
+
+{#if logos.length > 0}
+  <SocialProof {logos} />
+{/if}
+
+<CaseCarousel cases={caseStudies} />
+
+<section style="padding: 4rem 2rem;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2
+      style="font-family: var(--font-secondary); font-size: 2rem; font-weight: 300; margin: 0 0 3rem 0; color: var(--text-primary-dark); text-align: center;"
+    >
+      About Stoa Medical
+    </h2>
+    <ProfileCard
+      name="Stoa Medical Founder, Eric Pan"
+      copy="We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x. We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x. We're writing the playbook for AI-powered EHR integrations. To cut implementation time and provider pain by 10x."
+      linkedin="https://linkedin.com"
+    />
+  </div>
+</section>
+
