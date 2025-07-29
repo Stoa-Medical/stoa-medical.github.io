@@ -1,33 +1,31 @@
 <script>
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
-  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+  import LogoMark from "$lib/components/atoms/LogoMark.svelte";
   import FlowbiteIcon from "$lib/icons/FlowbiteIcon.svelte";
+
+  let {
+    links = [
+      { href: "/products", label: "Products", icon: "laptop-code" },
+      { href: "/services", label: "Services", icon: "cash" },
+      { href: "/about", label: "About", icon: "profile" },
+    ],
+  } = $props();
 </script>
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
-    <StoaMedicalIcon width={32} height={44} />
+    <LogoMark size="md" />
   </a>
   <nav>
     <ul class="nav-links">
-      <li>
-        <a href="/products" class="nav-link">
-          <span class="nav-text">Products</span>
-          <span class="nav-icon"><FlowbiteIcon type="laptop-code" /></span>
-        </a>
-      </li>
-      <li>
-        <a href="/services" class="nav-link">
-          <span class="nav-text">Services</span>
-          <span class="nav-icon"><FlowbiteIcon type="cash" /></span>
-        </a>
-      </li>
-      <li>
-        <a href="/about" class="nav-link">
-          <span class="nav-text">About</span>
-          <span class="nav-icon"><FlowbiteIcon type="profile" /></span>
-        </a>
-      </li>
+      {#each links as link}
+        <li>
+          <a href={link.href} class="nav-link">
+            <span class="nav-text">{link.label}</span>
+            <span class="nav-icon"><FlowbiteIcon type={link.icon} /></span>
+          </a>
+        </li>
+      {/each}
       <li>
         <a
           href="https://github.com/Stoa-Medical"

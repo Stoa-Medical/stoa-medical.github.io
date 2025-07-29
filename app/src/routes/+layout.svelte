@@ -1,12 +1,10 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-  import Navbar from "$lib/components/Navbar.svelte";
+  import Nav from "$lib/components/molecules/Nav.svelte";
 </script>
 
 <div class="layout-container">
-  <header>
-    <Navbar />
-  </header>
+
   <!-- Main content area -->
   <main>
     <slot />

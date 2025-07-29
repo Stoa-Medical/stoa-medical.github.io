@@ -7,6 +7,8 @@ import {
   type Theme,
 } from "$lib/utils/theme";
 
+export type { Theme };
+
 // Create a store with the initial theme value
 export const theme: Writable<Theme> = writable(getInitialTheme());
 
