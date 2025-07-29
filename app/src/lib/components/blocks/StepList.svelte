@@ -1,5 +1,5 @@
 <script>
-  import StepItem from "$lib/components/molecules/StepItem.svelte";
+  import StepItem from "$lib/components/chunks/StepItem.svelte";
 
   let { items = [], class: className = "" } = $props();
 

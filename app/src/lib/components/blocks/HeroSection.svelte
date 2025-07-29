@@ -1,15 +1,9 @@
 <script>
-  import VerticalDivider from "$lib/components/atoms/VerticalDivider.svelte";
-  import LogoMark from "$lib/components/atoms/LogoMark.svelte";
-
   let { class: className = "" } = $props();
 </script>
 
 <section class="hero-section {className}">
   <div class="hero-section__container">
-    <div class="hero-section__logo">
-      <LogoMark size="md" />
-    </div>
 
     <div class="hero-section__content">
       <slot name="content" />
@@ -19,9 +13,7 @@
       <div class="hero-section__bottom-left">
         <slot name="subtitle" />
       </div>
-      <div class="hero-section__bottom-center">
-        <VerticalDivider sticky={false} />
-      </div>
+
       <div class="hero-section__bottom-right">
         <slot name="nav" />
       </div>

@@ -1,5 +1,5 @@
 <script>
-  import CaseStudyCard from "$lib/components/molecules/CaseStudyCard.svelte";
+  import CaseStudyCard from "$lib/components/chunks/CaseStudyCard.svelte";
 
   let {
     title = "Some of the ways we've helped others 10x their integrations",

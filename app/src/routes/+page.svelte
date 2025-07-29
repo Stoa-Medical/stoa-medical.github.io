@@ -1,11 +1,10 @@
 <script lang="ts">
-  import HeroSection from "$lib/components/organisms/HeroSection.svelte";
-  import HeroCopy from "$lib/components/molecules/HeroCopy.svelte";
-  import LinkButton from "$lib/components/atoms/LinkButton.svelte";
-  import StepList from "$lib/components/organisms/StepList.svelte";
-  import SocialProof from "$lib/components/organisms/SocialProof.svelte";
-  import CaseCarousel from "$lib/components/organisms/CaseCarousel.svelte";
-  import ProfileCard from "$lib/components/molecules/ProfileCard.svelte";
+  import HeroSection from "$lib/components/blocks/HeroSection.svelte";
+  import HeroCopy from "$lib/components/chunks/HeroCopy.svelte";
+  import StepList from "$lib/components/blocks/StepList.svelte";
+  import SocialProof from "$lib/components/blocks/SocialProof.svelte";
+  import CaseCarousel from "$lib/components/blocks/CaseCarousel.svelte";
+  import ProfileCard from "$lib/components/chunks/ProfileCard.svelte";
 
   // Step items data
   const steps = [
@@ -68,13 +67,7 @@
     <HeroCopy
       headline="We're building the future of EHR integrations with AI agents, workflows and software."
     >
-      <LinkButton
-        href="https://cal.com/eric-pan/intro"
-        external={true}
-        variant="ghost"
-      >
-        Book a call ↗
-      </LinkButton>
+      <button>Book a call ↗</button>
     </HeroCopy>
   </svelte:fragment>
   <svelte:fragment slot="subtitle">
@@ -111,9 +104,7 @@
   >
     The Modern Alternative to Legacy Healthcare Integrations.
   </h2>
-  <LinkButton href="https://cal.com/eric-pan/intro" external={true}>
-    Book a call ↗
-  </LinkButton>
+  <button>Book a call ↗</button>
 </section>
 
 <StepList items={steps} />

@@ -1,6 +1,6 @@
 <script>
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
-  import LogoMark from "$lib/components/atoms/LogoMark.svelte";
+  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
   import FlowbiteIcon from "$lib/icons/FlowbiteIcon.svelte";
 
   let {
@@ -14,7 +14,7 @@
 
 <header class="navbar serif-font">
   <a href="/" class="brand">
-    <LogoMark size="md" />
+    <StoaMedicalIcon width={32} height={44} />
   </a>
   <nav>
     <ul class="nav-links">

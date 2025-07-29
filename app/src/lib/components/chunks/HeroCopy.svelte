@@ -1,11 +1,9 @@
 <script>
-  import HeadingXL from "$lib/components/atoms/HeadingXL.svelte";
-
   let { headline = "", sub = "", class: className = "" } = $props();
 </script>
 
 <div class="hero-copy {className}">
-  <HeadingXL text={headline} />
+  <h1 class="hero-copy__headline">{headline}</h1>
   {#if sub}
     <p class="hero-copy__sub">{sub}</p>
   {/if}
