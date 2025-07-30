@@ -1,6 +1,6 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-  import Nav from "$lib/components/chunks/Nav.svelte";
+
 </script>
 
 <div class="layout-container">

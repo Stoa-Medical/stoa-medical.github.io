@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Stoa Medical - AI Healthcare Integrations Company</title>
+  <title>Stoa Medical - AI Healthcare Integration</title>
   <meta
     name="description"
     content="We're building the future of EHR integrations with AI and human-centric software."
