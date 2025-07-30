@@ -1,0 +1,54 @@
+---
+title: Products - Stoa Medical
+description: Our projects focus on integrating biomedicine and wellness through innovative AI-powered solutions.
+---
+
+# Products
+
+## Our projects focus on integrating biomedicine and wellness.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At Stoa, we're committed to building products that empower users — notably providers, patients, and people that support them.
+
+### Featured Products
+
+#### **[Portico](https://github.com/Stoa-Medical/Portico)** - Agentic Interface Engine
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+**Key Features:**
+- Duis aute irure dolor in reprehenderit
+- In voluptate velit esse cillum dolore
+- Eu fugiat nulla pariatur excepteur sint
+
+### Coming Soon
+
+#### **Project Alpha**
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+#### **Project Beta**
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+### Our Development Philosophy
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit:
+
+1. **User-Centered Design**: At vero eos et accusamus et iusto odio dignissimos
+2. **Evidence-Based Approach**: Ducimus qui blanditiis praesentium voluptatum
+3. **Continuous Innovation**: Deleniti atque corrupti quos dolores et quas molestias
+
+### Technology Stack
+
+- **AI & Machine Learning**: Excepturi sint occaecati cupiditate non provident
+- **Cloud Infrastructure**: Similique sunt in culpa qui officia deserunt
+- **Security & Compliance**: Mollitia animi, id est laborum et dolorum fuga
+
+### Get Involved
+
+Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+
+If there's a problem you'd like solved in healthcare, please [reach out](mailto:eric.pan@stoamedical.com) and I would love to hear!
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+</svelte:head>
