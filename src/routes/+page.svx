@@ -3,15 +3,6 @@ title: Stoa Medical - AI Healthcare Integration
 description: We're building the future of EHR integrations with AI and human-centric software.
 ---
 
-<script>
-  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
-
-</script>
-
-<div style="padding: 0.5rem;">
-  <StoaMedicalIcon size="small" showText={true} />
-</div>
-
 # We're building the future of EHR integrations with AI and human-centric software.
 `Button: Book a call`
 

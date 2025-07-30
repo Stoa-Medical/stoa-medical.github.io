@@ -10,6 +10,8 @@
   /* Fonts */
   --font-primary: "Helvetica", sans-serif;
   --font-secondary: "Cormorant Garamond", serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
 
   /* Raw Color Palette */
   --white: #fdfcfb;
@@ -23,6 +25,7 @@
   --sky-mid: #dde6f8;
   --sea: #a7e7df;
   --sea-mid: #c9f4ef;
+  --modern-blue: #000720;
   --error: #e58382;
   --error-mid: #f1b2b0;
   --success: #76d5ac;
@@ -41,10 +44,10 @@
   /* --link-color-light: var(--accent-light); */
 
   /* Dark Theme Specific Values */
-  --bg-primary-dark: var(--ink);
+  --bg-primary-dark: var(--modern-blue);
   --bg-secondary-dark: #322f3d;
-  --text-primary-dark: var(--ink-light);
-  --text-secondary-dark: #dddcde;
+  --text-primary-dark: var(--sea);
+  --text-secondary-dark: var(--sea);
   --accent-dark: var(--sea-mid);
   --logo-filter-dark: grayscale(80%) brightness(150%);
   /* --border-color-dark: var(--ink-mid); */
@@ -103,6 +106,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-primary);
+  font-weight: var(--font-weight-light);
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
@@ -118,12 +122,14 @@ h1 {
   font-family: var(--font-secondary);
   color: var(--text-primary);
   font-size: 2.8rem;
+  font-weight: var(--font-weight-light);
 }
 
 h2 {
   font-family: var(--font-primary);
   color: var(--text-secondary);
   font-size: 1.6rem;
+  font-weight: var(--font-weight-light);
 }
 
 h3,
@@ -132,6 +138,7 @@ h5,
 h6 {
   font-family: var(--font-primary);
   color: var(--text-secondary);
+  font-weight: var(--font-weight-light);
 }
 
 a {

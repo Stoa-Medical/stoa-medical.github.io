@@ -41,7 +41,7 @@
         return "var(--sea)";
       default:
         // Fallback to theme-based color if no color is specified
-        return $theme === "dark" ? "var(--white)" : "var(--ink)";
+        return $theme === "dark" ? "var(--sea)" : "var(--papyrus)";
     }
   });
 </script>
@@ -93,7 +93,7 @@
   .stoa {
     font-family: var(--font-secondary);
     letter-spacing: -0.02em;
-    font-weight: 600;
+    font-weight: var(--font-weight-light);
     color: var(--logo-color, var(--text-primary));
     /* Scale text size based on logo size */
     font-size: calc(2rem * var(--logo-scale, 1));
