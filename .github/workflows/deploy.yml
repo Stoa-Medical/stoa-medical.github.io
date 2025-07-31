@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: "pnpm"
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Point to the client output directory specifically
-          path: 'build'
+          path: "build"
 
   deploy:
     # Only try this on the `main` branch

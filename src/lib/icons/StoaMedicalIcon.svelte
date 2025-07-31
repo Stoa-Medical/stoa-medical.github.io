@@ -16,13 +16,13 @@
 
     switch (size) {
       case "small":
-        return { width: 50, height: Math.round(50 * ratio) }; // ~68px height
+        return { width: 25, height: Math.round(50 * ratio) }; // ~68px height
       case "medium":
-        return { width: 100, height: Math.round(100 * ratio) }; // ~137px height
+        return { width: 50, height: Math.round(100 * ratio) }; // ~137px height
       case "large":
-        return { width: 250, height: Math.round(400 * ratio) }; // ~549px height
+        return { width: 100, height: Math.round(400 * ratio) }; // ~549px height
       default:
-        return { width: 50, height: baseHeight }; // Original size
+        return { width: 50, height: Math.round(100 * ratio) }; // Original size
     }
   });
 
@@ -41,12 +41,16 @@
         return "var(--sea)";
       default:
         // Fallback to theme-based color if no color is specified
-        return $theme === "dark" ? "var(--sea)" : "var(--papyrus)";
+        return $theme === "dark" ? "var(--sea)" : "var(--ink)";
     }
   });
 </script>
 
-<div class="logo-container" data-size={size} style="--logo-color: {currentColor}">
+<div
+  class="logo-container"
+  data-size={size}
+  style="--logo-color: {currentColor}"
+>
   <svg
     width={dimensions.width}
     height={dimensions.height}
@@ -72,10 +76,10 @@
       fill={currentColor}
     />
   </svg>
-  
-{#if showText}
-    <span class="stoa">Stoa Medical</span>
-{/if}
+
+  {#if showText}
+    <span class="stoa-logo-text">Stoa Medical</span>
+  {/if}
 </div>
 
 <style>
@@ -90,10 +94,10 @@
     flex-shrink: 0;
   }
 
-  .stoa {
+  .stoa-logo-text {
     font-family: var(--font-secondary);
     letter-spacing: -0.02em;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-heavy);
     color: var(--logo-color, var(--text-primary));
     /* Scale text size based on logo size */
     font-size: calc(2rem * var(--logo-scale, 1));
@@ -108,7 +112,6 @@
   }
 
   :global(.logo-container[data-size="large"]) {
-    --logo-scale: 4.5;
+    --logo-scale: 4;
   }
-
 </style>

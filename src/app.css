@@ -11,8 +11,7 @@
   --font-primary: "Helvetica", sans-serif;
   --font-secondary: "Cormorant Garamond", serif;
   --font-weight-light: 300;
-  --font-weight-normal: 500;
-  --font-weight-heavy: 700;
+  --font-weight-normal: 400;
 
   /* Raw Color Palette */
   --white: #fdfcfb;
@@ -39,7 +38,7 @@
   --bg-secondary-light: var(--papyrus-light);
   --text-primary-light: var(--ink);
   --text-secondary-light: #545260;
-  --accent-light: var(--papyrus);
+  --accent-light: var(--ink);
   --logo-filter-light: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
   /* --border-color-light: var(--ink-mid); */
   /* --link-color-light: var(--accent-light); */
@@ -129,11 +128,17 @@ h1 {
 h2 {
   font-family: var(--font-primary);
   color: var(--text-secondary);
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: var(--font-weight-light);
 }
 
-h3,
+h3 {
+  font-family: var(--font-secondary);
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-light);
+}
+
 h4,
 h5,
 h6 {

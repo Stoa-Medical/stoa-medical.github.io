@@ -83,7 +83,6 @@ export function watchTheme(callback: (theme: Theme) => void): () => void {
   return () => observer.disconnect();
 }
 
-
 // Create a store with the initial theme value
 export const theme: Writable<Theme> = writable(getInitialTheme());
 
