@@ -44,7 +44,7 @@
   /* --link-color-light: var(--accent-light); */
 
   /* Dark Theme Specific Values */
-  --bg-primary-dark: var(--modern-blue);
+  --bg-primary-dark: var(--ink);
   --bg-secondary-dark: #322f3d;
   --text-primary-dark: var(--sea);
   --text-secondary-dark: var(--sea);
