@@ -1,7 +1,7 @@
 <script>
   import Line from "$lib/components/Line.svelte";
   import { ArrowUpRightFromSquareOutline, MugHotOutline } from "flowbite-svelte-icons";
-  import {TypeWriter} from "svelte-typewrite";
+  import Typewriter from "$lib/components/Typewriter.svelte";
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 <div class="max-w-4xl mx-auto">
   <h1 class="text-center">
     We're building the future of EHRs with AI integrations and user-centric
-    software <br/> for <TypeWriter
+    software <br/> for <Typewriter
     texts={["patients", "providers", "health systems", "you"]}
     typeSpeed={80}
     deleteSpeed={80}
