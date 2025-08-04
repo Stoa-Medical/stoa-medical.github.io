@@ -5,29 +5,20 @@
 </script>
 
 <svelte:head>
-  <title>Stoa Medical - AI Healthcare Integration</title>
+  <title>Stoa Medical</title>
   <meta
     name="description"
     content="We're building the future of EHR integrations with AI and human-centric software."
   />
 </svelte:head>
 
-<h1 class="w-4/5">
+<h1 class="text-center">
   We're building the future of EHRs with AI integrations and user-centric
   software.
 </h1>
 <div class="flex flex-col sm:flex-row gap-4 justify-left pb-12">
   <button class="flex flex-row gap-1">Get in touch<MugHotOutline /></button>
   <button class="flex flex-row gap-1">Join the waitlist<ArrowUpRightFromSquareOutline /></button>
-</div>
-
-<div class="flex flex-row justify-between items-center my-4 w-full">
-  <span class="flex-shrink-0">An AI Healthcare Integrations Company</span>
-  <div class="flex flex-row space-x-4">
-    <a href="/about">About</a>
-    <a href="/resources">Resources</a>
-    <LightbulbIcon />
-  </div>
 </div>
 
 <!-- Vertical line between sections -->

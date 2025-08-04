@@ -1,23 +1,16 @@
 <!-- src/routes/+layout.svelte -->
 <script>
-  import StoaMedicalIcon from "$lib/icons/StoaMedicalIcon.svelte";
+  import Header from "$lib/components/Header.svelte";
+  import Footer from "$lib/components/Footer.svelte";
   import '../app.css';
 
   let { children } = $props();
 </script>
 
-<div class="p-5">
-  <a href="/">
-    <StoaMedicalIcon size="small" showText={true} />
-  </a>
-</div>
+<Header />
 
-<main class="p-5 space-y-10">
+<main class="pt-32 pb-20 px-5 space-y-10">
   {@render children()}
 </main>
 
-<style>
-  a {
-    text-decoration: none;
-  }
-</style>
+<Footer />
