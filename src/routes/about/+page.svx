@@ -4,7 +4,6 @@ description: Learn about our mission to fix how healthcare works through technol
 ---
 
 # A Stoa for Healthcare
-
 ## Stoa Medical is on a mission to fix how healthcare works.
 
 ...

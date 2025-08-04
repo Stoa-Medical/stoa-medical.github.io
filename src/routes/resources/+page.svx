@@ -3,8 +3,7 @@ title: Resources - Stoa Medical
 description: Our projects focus on integrating biomedicine and wellness through innovative AI-powered solutions.
 ---
 
-# Resources
-
+# Resources 
 ## Our focus is on integrating biomedicine and wellness.
 
 Biomedicine: 
