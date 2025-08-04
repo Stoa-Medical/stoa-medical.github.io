@@ -1,6 +1,7 @@
 <!-- src/lib/components/Footer.svelte -->
 <script lang="ts">
   import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
+  import GitHubIcon from "$lib/icons/GitHubIcon.svelte";
 </script>
 
 <footer class="footer">
@@ -10,6 +11,7 @@
     <nav class="footer-nav">
       <a href="/about">About</a>
       <a href="/resources">Resources</a>
+      <GitHubIcon />
       <LightbulbIcon />
     </nav>
   </div>
@@ -22,7 +24,6 @@
     left: 0;
     width: 100%;
     z-index: 50;
-    padding: 0.5rem 1.25rem;
     background-color: color-mix(in srgb, var(--bg-primary) 70%, transparent);
     backdrop-filter: blur(8px);
     border-top: 1px solid color-mix(in srgb, var(--text-primary) 10%, transparent);
@@ -32,7 +33,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 64rem; /* matches max-w-4xl */
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem; /* matches px-6 */
   }
 
   .footer-nav {

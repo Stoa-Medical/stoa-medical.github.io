@@ -1,5 +1,5 @@
 <script>
-  let { texts = [], typeSpeed = 80, deleteSpeed = 80, repeat = 0, delay = 1000 } = $props();
+  let { texts = [], typeSpeed = 80, deleteSpeed = 80, repeat = 0, delay = 1000, blinkingCursor = true } = $props();
   
   let displayText = $state("");
   let currentIndex = $state(0);
@@ -77,5 +77,20 @@
 </script>
 
 <span class="inline-block">
-  {@html createLinkElement(displayText)}<span class="animate-pulse">|</span>
+  {@html createLinkElement(displayText)}<span class={blinkingCursor ? "cursor-blink" : ""}>|</span>
 </span>
+
+<style>
+  .cursor-blink {
+    animation: blink 1s ease-in-out infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+</style>

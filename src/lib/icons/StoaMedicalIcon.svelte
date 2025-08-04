@@ -97,7 +97,7 @@
   .stoa-logo-text {
     font-family: var(--font-secondary);
     letter-spacing: -0.02em;
-    font-weight: var(--font-weight-heavy);
+    font-weight: var(--font-weight-medium);
     color: var(--logo-color, var(--text-primary));
     /* Scale text size based on logo size */
     font-size: calc(2rem * var(--logo-scale, 1));
