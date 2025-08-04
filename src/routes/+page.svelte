@@ -1,7 +1,7 @@
 <script>
   import Line from "$lib/components/Line.svelte";
-  import LightbulbIcon from "$lib/icons/LightbulbIcon.svelte";
   import { ArrowUpRightFromSquareOutline, MugHotOutline } from "flowbite-svelte-icons";
+  import {TypeWriter} from "svelte-typewrite";
 </script>
 
 <svelte:head>
@@ -15,12 +15,13 @@
 <div class="max-w-4xl mx-auto">
   <h1 class="text-center">
     We're building the future of EHRs with AI integrations and user-centric
-    software.
+    software <br/> for <TypeWriter
+    texts={["patients", "providers", "health systems", "you"]}
+    typeSpeed={80}
+    deleteSpeed={80}
+    repeat={0}
+  />.
   </h1>
-
-  <div style="position: relative; height: 4rem;">
-    <Line x="50%" />
-  </div>
 
   <h3 class="text-center">
     You've been there. Waiting months for simple EHR feeds and every integration
@@ -32,9 +33,7 @@
     <br/>
     To cut implementation time and provider pain by 10x.
   </h3>
-  <div style="position: relative; height: 4rem;">
-    <Line x="50%" />
-  </div>
+
   <h2 class="text-center">About Stoa Medical</h2>
 
 
