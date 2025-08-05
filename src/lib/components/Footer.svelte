@@ -6,7 +6,7 @@
 
 <footer class="footer">
   <div class="footer-content">
-    <span>An AI Healthcare Integrations Company</span>
+    <span>An AI Healthcare Integration Company</span>
 
     <nav class="footer-nav">
       <a href="/about">About</a>

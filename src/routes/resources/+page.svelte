@@ -30,10 +30,13 @@
   <h2>Open-source tools</h2>
 
   <h3>Featured Tools</h3>
-  ...
+  synthea-pydantic: https://github.com/Stoa-Medical/synthea-pydantic
+  omop-pydantic: https://github.com/Stoa-Medical/omop-pydantic
 
   <h3>Coming Soon</h3>
   ...
+  fhir-x-omop: https://github.com/Stoa-Medical/fhir-x-omop
+
 
   <h3>Various Talks</h3>
   ...
