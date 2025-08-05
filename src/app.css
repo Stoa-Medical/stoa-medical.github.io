@@ -1,0 +1,130 @@
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base variables */
+:root {
+  /* Fonts */
+  --font-primary: "Helvetica", sans-serif;
+  --font-secondary: "Cormorant Garamond", serif;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+
+  /* Core Colors (used by components) */
+  --white: #fdfcfb;
+  --ink: #262431;
+  --ink-mid: #b2b1b9;
+  --papyrus: #ecd8a8;
+  --papyrus-light: #f8f2e3;
+  --sky: #b0c3e8;
+  --sea: #a7e7df;
+  --sea-mid: #c9f4ef;
+
+  /* Light theme values */
+  --bg-primary-light: var(--white);
+  --bg-secondary-light: var(--papyrus-light);
+  --text-primary-light: var(--ink);
+  --text-secondary-light: #545260;
+  --accent-light: var(--ink-mid);
+
+  /* Dark theme values */
+  --bg-primary-dark: var(--ink);
+  --bg-secondary-dark: #322f3d;
+  --text-primary-dark: var(--sea);
+  --text-secondary-dark: var(--sea);
+  --accent-dark: var(--sea-mid);
+
+  /* Default to light theme */
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --accent: var(--accent-light);
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --accent: var(--accent-dark);
+}
+
+/* Layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Base styles */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-light);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+/* Typography */
+h1 {
+  font-family: var(--font-secondary);
+  color: var(--text-primary);
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-medium);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  color: var(--text-secondary);
+  font-size: 2rem;
+  font-weight: var(--font-weight-light);
+}
+
+h3 {
+  font-family: var(--font-secondary);
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-light);
+}
+
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-light);
+}
+
+/* Links */
+a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 2px;
+  transition:
+    color 0.3s ease,
+    text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-secondary);
+  text-decoration-color: var(--text-secondary);
+}
