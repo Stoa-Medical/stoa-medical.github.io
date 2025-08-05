@@ -33,7 +33,7 @@
     </ul>
     
     <p class="leading-relaxed font-semibold">
-      You're not asking for much—just tools that don't actively fight against you.
+      You're not asking for much - just tools that don't actively fight against you.
     </p>
   </div>
 
@@ -79,11 +79,11 @@
     <h2 class="mb-8">Your Expertise Should Shape The Tools You Use</h2>
     
     <p class="leading-relaxed mb-8">
-      I'm looking for clinicians ready to move beyond accepting broken systems. Whether you're drowning in documentation, missing critical referral information, or just tired of technology that slows you down—your insights will directly shape what I build.
+      I'm looking for clinicians ready to move beyond accepting broken systems. Whether you're drowning in documentation, missing critical referral information, or just tired of technology that slows you down - your insights will directly shape what I build.
     </p>
     
     <p class="font-semibold mb-8">
-      No focus groups, no middlemen—just honest conversations about what would actually make your day better.
+      No focus groups, no middlemen - just honest conversations about what would actually make your day better.
     </p>
   </div>
 
@@ -97,7 +97,7 @@
   
   <div class="text-center mt-12">
     <p class="text-sm text-gray-600 italic">
-      Still skeptical? I get it. You've been burned before. Start small—just tell me about one thing that drives you crazy every day. Let's fix that first.
+      Still skeptical? I get it. You've been burned before. Start small - just tell me about one thing that drives you crazy every day. Let's fix that first.
     </p>
   </div>
 </div>

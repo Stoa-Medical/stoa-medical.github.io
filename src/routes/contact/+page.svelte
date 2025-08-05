@@ -14,7 +14,7 @@
   
   <div class="space-y-4 mb-12 text-center">
     <p class="text-xl leading-relaxed">
-      Whether you're a patient tired of broken systems, a clinician fighting technology, or an organization ready for real innovation—I'm here to help.
+      Whether you're a patient tired of broken systems, a clinician fighting technology, or an organization ready for real innovation - I'm here to help.
     </p>
   </div>
 
@@ -44,10 +44,10 @@
   <div class="bg-gray-50 rounded-lg p-6 mb-12">
     <p class="leading-relaxed mb-4"><strong>Current focus areas:</strong></p>
     <ul class="space-y-2">
-      <li class="leading-relaxed">• Patient data ownership—your health story, in your control</li>
-      <li class="leading-relaxed">• Clinical workflow tools—technology that respects your expertise</li>
-      <li class="leading-relaxed">• AI integration—thoughtful automation that enhances care</li>
-      <li class="leading-relaxed">• Interoperability solutions—making systems actually talk to each other</li>
+      <li class="leading-relaxed">• Patient data ownership - your health story, in your control</li>
+      <li class="leading-relaxed">• Clinical workflow tools - technology that respects your expertise</li>
+      <li class="leading-relaxed">• AI integration - thoughtful automation that enhances care</li>
+      <li class="leading-relaxed">• Interoperability solutions - making systems actually talk to each other</li>
     </ul>
   </div>
 
@@ -65,7 +65,7 @@
 
   <div class="text-center mb-8">
     <p class="text-lg leading-relaxed mb-6">
-      Get in touch—let's start the conversation.
+      Get in touch - let's start the conversation.
     </p>
   </div>
 
@@ -73,7 +73,7 @@
   
   <div class="text-center mt-12">
     <p class="text-sm text-gray-600 italic">
-      "The future of healthcare isn't about the fanciest AI or the biggest vendor. It's about technology that remembers there's a human on both sides of the screen."
+      The future of healthcare isn't about the fanciest AI or the biggest vendor. It's about technology that remembers there's a human on both sides of the screen.
     </p>
   </div>
 </div>

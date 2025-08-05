@@ -14,7 +14,7 @@
   
   <div class="space-y-4 mb-12 text-center">
     <p class="text-xl leading-relaxed">
-      You're not just a patient ID or a collection of test results. You're a person with a unique health journey—and it's time technology treated you that way.
+      You're not just a patient ID or a collection of test results. You're a person with a unique health journey - and it's time technology treated you that way.
     </p>
   </div>
 
@@ -51,7 +51,7 @@
 
   <div class="space-y-4 mb-12">
     <p class="leading-relaxed">
-      This isn't a pipe dream. It's what I'm building at Stoa Medical—starting with understanding exactly what would make YOUR healthcare experience better.
+      This isn't a pipe dream. It's what I'm building at Stoa Medical - starting with understanding exactly what would make YOUR healthcare experience better.
     </p>
     
     <p class="leading-relaxed">
@@ -63,7 +63,7 @@
     <h2 class="mb-8">Help Me Build Healthcare That Works For You</h2>
     
     <p class="leading-relaxed mb-8">
-      I'm looking for patients and caregivers ready to share their stories and shape the future of healthcare technology. Your experiences—the good, the bad, and the frustrating—will directly influence what I build.
+      I'm looking for patients and caregivers ready to share their stories and shape the future of healthcare technology. Your experiences - the good, the bad, and the frustrating - will directly influence what I build.
     </p>
     
     <p class="font-semibold mb-8">
@@ -78,4 +78,10 @@
   </div>
 
   <ActionButtons />
+  
+  <div class="text-center mt-12">
+    <p class="text-sm text-gray-600 italic">
+      Healthcare should be personal, not institutional. Technology should connect us to our care, not create barriers to it.
+    </p>
+  </div>
 </div>

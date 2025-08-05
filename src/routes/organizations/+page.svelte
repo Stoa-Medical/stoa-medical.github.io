@@ -45,7 +45,7 @@
     </p>
     
     <p class="leading-relaxed">
-      Here's what I know: <strong>Your success with AI depends entirely on your data foundation.</strong> Not the AI model, not the vendor's promises—but how well your systems can actually share and understand information.
+      Here's what I know: <strong>Your success with AI depends entirely on your data foundation.</strong> Not the AI model, not the vendor's promises - but how well your systems can actually share and understand information.
     </p>
   </div>
 
@@ -54,10 +54,10 @@
   <div class="bg-gray-50 rounded-lg p-6 mb-12">
     <p class="leading-relaxed mb-4"><strong>Real future-proofing means:</strong></p>
     <ul class="space-y-2">
-      <li class="leading-relaxed">• Solid foundations—clean data pipelines any future system can use</li>
-      <li class="leading-relaxed">• Flexible integrations—standards-based approaches that don't lock you in</li>
-      <li class="leading-relaxed">• Incremental wins—small improvements that compound into transformation</li>
-      <li class="leading-relaxed">• Clear metrics—knowing what's actually moving the needle on outcomes</li>
+      <li class="leading-relaxed">• Solid foundations - clean data pipelines any future system can use</li>
+      <li class="leading-relaxed">• Flexible integrations - standards-based approaches that don't lock you in</li>
+      <li class="leading-relaxed">• Incremental wins - small improvements that compound into transformation</li>
+      <li class="leading-relaxed">• Clear metrics - knowing what's actually moving the needle on outcomes</li>
     </ul>
   </div>
 
@@ -75,7 +75,7 @@
     </p>
     
     <p class="leading-relaxed">
-      As a solo founder, I move at startup speed with enterprise-grade reliability. I'll tell you what will actually work, not what you want to hear. No account managers, no telephone game—just direct access to someone betting their entire business on making you successful.
+      As a solo founder, I move at startup speed with enterprise-grade reliability. I'll tell you what will actually work, not what you want to hear. No account managers, no telephone game - just direct access to someone betting their entire business on making you successful.
     </p>
   </div>
 
@@ -83,7 +83,7 @@
     <h2 class="mb-8">Let's Build Practical Solutions Together</h2>
     
     <p class="leading-relaxed mb-8">
-      I'm looking for healthcare organizations that value pragmatic progress over press releases. Whether you're a health system, startup, or technology company—ready to invest in foundations, not just flashy demos.
+      I'm looking for healthcare organizations that value pragmatic progress over press releases. Whether you're a health system, startup, or technology company - ready to invest in foundations, not just flashy demos.
     </p>
     
     <p class="font-semibold mb-8">
@@ -101,7 +101,7 @@
   
   <div class="text-center mt-12">
     <p class="text-sm text-gray-600 italic">
-      The future of healthcare won't be built by committees—it'll be built by small teams moving fast and fixing real problems.
+      The future of healthcare won't be built by committees - it'll be built by small teams moving fast and fixing real problems.
     </p>
   </div>
 </div>
