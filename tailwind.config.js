@@ -5,11 +5,10 @@ export default {
     "./node_modules/flowbite/**/*.{html,js,svelte,ts}",
     "./node_modules/flowbite-svelte-icons/**/*.{html,js,svelte,ts}"
   ],
-
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Cormorant Garamond", "serif"], // Override the default sans font
+        sans: ["Cormorant Garamond", "serif"],
       },
     },
   },

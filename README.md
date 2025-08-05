@@ -4,4 +4,6 @@ Stack:
 
 - SvelteKit (Svelte 5)
 - Tailwind CSS
-- Flowbite (icons + elements)
+- Flowbite (mostly icons)
+- TypeScript
+- Vite
