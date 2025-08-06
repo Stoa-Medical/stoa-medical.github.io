@@ -9,8 +9,21 @@
 
 <Header />
 
-<main class="pt-32 pb-20 px-5 space-y-10">
+<main class="main-content">
   {@render children()}
 </main>
 
 <Footer />
+
+<style>
+  .main-content {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .main-content > :global(* + *) {
+    margin-top: 2.5rem;
+  }
+</style>

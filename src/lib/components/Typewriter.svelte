@@ -21,14 +21,14 @@
     const lowerText = text.toLowerCase();
     const href = /** @type {Record<string, string>} */ (linkMap)[lowerText];
     if (href) {
-      return `<a href="${href}" class="underline hover:no-underline">${text}</a>`;
+      return `<a href="${href}" class="typewriter-link">${text}</a>`;
     }
     
     // Check if the current text is a partial match that could become a link
     for (const [key, url] of Object.entries(linkMap)) {
       if (key.startsWith(lowerText) && lowerText.length > 0) {
         // If we're typing and this could become a link, wrap the current text in a link
-        return `<a href="${url}" class="underline hover:no-underline">${text}</a>`;
+        return `<a href="${url}" class="typewriter-link">${text}</a>`;
       }
     }
     
@@ -76,11 +76,23 @@
   });
 </script>
 
-<span class="inline-block">
+<span class="typewriter-container">
   {@html createLinkElement(displayText)}<span class={blinkingCursor ? "cursor-blink" : ""}>|</span>
 </span>
 
 <style>
+  .typewriter-container {
+    display: inline-block;
+  }
+
+  :global(.typewriter-link) {
+    text-decoration: underline;
+  }
+
+  :global(.typewriter-link:hover) {
+    text-decoration: none;
+  }
+
   .cursor-blink {
     animation: blink 1s ease-in-out infinite;
   }

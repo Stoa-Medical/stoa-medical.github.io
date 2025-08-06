@@ -51,7 +51,7 @@
 
   <h2 class="text-left mt-12 mb-8">What If Technology Actually Supported Your Practice?</h2>
 
-  <div class="bg-gray-50 rounded-lg p-6 mb-12">
+  <div class="rounded-lg p-6 mb-12">
     <p class="leading-relaxed mb-4"><strong>Imagine systems that:</strong></p>
     <ul class="space-y-2">
       <li class="leading-relaxed">• Remember your workflows and adapt to how YOU practice</li>
@@ -96,7 +96,7 @@
   <ActionButtons />
   
   <div class="text-center mt-12">
-    <p class="text-sm text-gray-600 italic">
+    <p class="text-sm italic">
       Still skeptical? I get it. You've been burned before. Start small - just tell me about one thing that drives you crazy every day. Let's fix that first.
     </p>
   </div>

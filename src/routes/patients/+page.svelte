@@ -39,7 +39,7 @@
 
   <h2 class="text-left mt-12 mb-8">Imagine Healthcare That Works For You</h2>
 
-  <div class="bg-gray-50 rounded-lg p-6 mb-12">
+  <div class="rounded-lg p-6 mb-12">
     <p class="leading-relaxed mb-4"><strong>What if...</strong></p>
     <ul class="space-y-2">
       <li class="leading-relaxed">• All your health information lived in one place that YOU control</li>
@@ -80,7 +80,7 @@
   <ActionButtons />
   
   <div class="text-center mt-12">
-    <p class="text-sm text-gray-600 italic">
+    <p class="text-sm italic">
       Healthcare should be personal, not institutional. Technology should connect us to our care, not create barriers to it.
     </p>
   </div>
