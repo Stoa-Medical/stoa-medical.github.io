@@ -51,7 +51,7 @@
 
   <h2 class="text-left mt-12 mb-8">The Path to Being Future-Ready</h2>
 
-  <div class="bg-gray-50 rounded-lg p-6 mb-12">
+  <div class="rounded-lg p-6 mb-12">
     <p class="leading-relaxed mb-4"><strong>Real future-proofing means:</strong></p>
     <ul class="space-y-2">
       <li class="leading-relaxed">• Solid foundations - clean data pipelines any future system can use</li>
