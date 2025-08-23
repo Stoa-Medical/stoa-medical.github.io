@@ -12,7 +12,7 @@
 <div class="page-content">
   <h1 class="main-title">
     We're building the future of EHRs with AI integrations and user-centric
-    design for patients.
+    design for community health systems.
   </h1>
 
   <h2 class="section-title">What we believe to be true</h2>
@@ -60,7 +60,7 @@
     </div>
 
     <div class="belief-section">
-      <h3 class="belief-category">Community Health Systems</h3>
+      <h3 class="belief-category">Healthcare Organizations</h3>
       <hr class="section-divider" />
       <div class="belief-list">
         <p class="belief-item">
@@ -143,12 +143,12 @@
 
   .main-title {
     font-family: var(--font-primary);
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.2;
     letter-spacing: -0.03em;
     color: var(--text-primary);
-    margin-bottom: 6rem;
-    max-width: 56rem;
+    margin-bottom: 4.5rem;
+    max-width: 64rem;
   }
 
   .section-title {

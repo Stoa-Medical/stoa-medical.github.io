@@ -1,7 +1,6 @@
 <!-- src/routes/+layout.svelte -->
 <script>
   import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
   import "../app.css";
 
   let { children } = $props();
@@ -12,8 +11,6 @@
 <main class="main-content">
   {@render children()}
 </main>
-
-<Footer />
 
 <style>
   .main-content {
