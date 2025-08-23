@@ -26,7 +26,8 @@
     z-index: 50;
     background-color: color-mix(in srgb, var(--bg-primary) 70%, transparent);
     backdrop-filter: blur(8px);
-    border-top: 1px solid color-mix(in srgb, var(--text-primary) 10%, transparent);
+    border-top: 1px solid
+      color-mix(in srgb, var(--text-primary) 10%, transparent);
   }
 
   .footer-content {

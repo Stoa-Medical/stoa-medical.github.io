@@ -1,18 +1,25 @@
 <script>
-  let { texts = [], typeSpeed = 80, deleteSpeed = 80, repeat = 0, delay = 1000, blinkingCursor = true } = $props();
-  
+  let {
+    texts = [],
+    typeSpeed = 80,
+    deleteSpeed = 80,
+    repeat = 0,
+    delay = 1000,
+    blinkingCursor = true,
+  } = $props();
+
   let displayText = $state("");
   let currentIndex = $state(0);
   let isDeleting = $state(false);
   let currentRepeat = $state(0);
-  
+
   const linkMap = {
-    "patients": "/patients",
-    "you": "/contact", 
-    "providers": "/providers",
-    "health systems": "/organizations"
+    patients: "/patients",
+    you: "/contact",
+    providers: "/providers",
+    "health systems": "/organizations",
   };
-  
+
   /**
    * @param {string} text
    */
@@ -23,7 +30,7 @@
     if (href) {
       return `<a href="${href}" class="typewriter-link">${text}</a>`;
     }
-    
+
     // Check if the current text is a partial match that could become a link
     for (const [key, url] of Object.entries(linkMap)) {
       if (key.startsWith(lowerText) && lowerText.length > 0) {
@@ -31,13 +38,13 @@
         return `<a href="${url}" class="typewriter-link">${text}</a>`;
       }
     }
-    
+
     return text;
   }
-  
+
   function typewrite() {
     const currentText = texts[currentIndex] || "";
-    
+
     if (!isDeleting) {
       if (displayText.length < currentText.length) {
         displayText = currentText.slice(0, displayText.length + 1);
@@ -55,19 +62,19 @@
       } else {
         isDeleting = false;
         currentIndex = (currentIndex + 1) % texts.length;
-        
+
         if (currentIndex === 0) {
           currentRepeat++;
           if (repeat > 0 && currentRepeat >= repeat) {
             return;
           }
         }
-        
+
         setTimeout(typewrite, typeSpeed);
       }
     }
   }
-  
+
   $effect(() => {
     if (texts.length > 0) {
       const timeoutId = setTimeout(typewrite, 500);
@@ -77,7 +84,9 @@
 </script>
 
 <span class="typewriter-container">
-  {@html createLinkElement(displayText)}<span class={blinkingCursor ? "cursor-blink" : ""}>|</span>
+  {@html createLinkElement(displayText)}<span
+    class={blinkingCursor ? "cursor-blink" : ""}>|</span
+  >
 </span>
 
 <style>
@@ -96,12 +105,14 @@
   .cursor-blink {
     animation: blink 1s ease-in-out infinite;
   }
-  
+
   @keyframes blink {
-    0%, 50% {
+    0%,
+    50% {
       opacity: 1;
     }
-    51%, 100% {
+    51%,
+    100% {
       opacity: 0;
     }
   }

@@ -1,10 +1,21 @@
 <script>
-  import { ArrowUpRightFromSquareOutline, MugHotOutline } from "flowbite-svelte-icons";
+  import {
+    ArrowUpRightFromSquareOutline,
+    MugHotOutline,
+  } from "flowbite-svelte-icons";
 </script>
 
 <div class="action-buttons">
-  <a href="https://cal.com/eric-pan-stoamedical" target="_blank" class="action-link">Get in touch<MugHotOutline /></a>
-  <a href="https://forms.gle/sDCEjktYkP8tXrUM8" target="_blank" class="action-link">Join the waitlist<ArrowUpRightFromSquareOutline /></a>
+  <a
+    href="https://cal.com/eric-pan-stoamedical"
+    target="_blank"
+    class="action-link">Get in touch<MugHotOutline /></a
+  >
+  <a
+    href="https://forms.gle/sDCEjktYkP8tXrUM8"
+    target="_blank"
+    class="action-link">Join the waitlist<ArrowUpRightFromSquareOutline /></a
+  >
 </div>
 
 <style>

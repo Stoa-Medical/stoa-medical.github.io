@@ -6,11 +6,20 @@
 
   // Subscribe to the theme store (automatically handled by Svelte)
   let isDark = $derived($theme === "dark");
-  
-  let { href = "https://github.com/Stoa-Medical", ariaLabel = "Visit Stoa Medical's GitHub" } = $props();
+
+  let {
+    href = "https://github.com/Stoa-Medical",
+    ariaLabel = "Visit Stoa Medical's GitHub",
+  } = $props();
 </script>
 
-<a {href} aria-label={ariaLabel} class="github-link" target="_blank" rel="noopener noreferrer">
+<a
+  {href}
+  aria-label={ariaLabel}
+  class="github-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <GithubSolid class={isDark ? "github-icon-dark" : "github-icon-light"} />
 </a>
 
@@ -31,12 +40,12 @@
   .github-link:hover {
     background-color: var(--accent);
   }
-  
+
   /* Dark mode: lower opacity for outline effect */
   :global(.github-icon-dark) {
     opacity: 0.8;
   }
-  
+
   /* Light mode: full opacity */
   :global(.github-icon-light) {
     opacity: 1;
