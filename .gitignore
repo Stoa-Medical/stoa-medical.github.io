@@ -171,3 +171,22 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# BEGIN roobert
+# Roobert
+.roobert/
+.DS_Store
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.next/
+out/
+build/
+dist/
+.nuxt/
+.vuepress/dist
+# END roobert
